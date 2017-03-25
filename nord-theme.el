@@ -401,6 +401,11 @@
     `(company-tooltip-common-selection ((,class (:foreground ,nord8 :background ,nord3))))
     `(company-tooltip-mouse ((,class (:inherit highlight))))
     `(company-tooltip-selection ((,class (:background ,nord3 :weight bold))))
+
+    ;; > Evil
+    `(evil-ex-info ((,class (:foreground ,nord8))))
+    `(evil-ex-substitute-replacement ((,class (:foreground ,nord9))))
+    `(evil-ex-substitute-matches ((,class (:inherit isearch))))
 ))
 
 ;;;###autoload
