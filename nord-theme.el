@@ -406,6 +406,14 @@
     `(evil-ex-info ((,class (:foreground ,nord8))))
     `(evil-ex-substitute-replacement ((,class (:foreground ,nord9))))
     `(evil-ex-substitute-matches ((,class (:inherit isearch))))
+
+    ;; > Flycheck
+    `(flycheck-error ((,class (:underline (:style wave :color ,nord11)))))
+    `(flycheck-fringe-error ((,class (:foreground ,nord11 :weight bold))))
+    `(flycheck-fringe-info ((,class (:foreground ,nord8 :weight bold))))
+    `(flycheck-fringe-warning ((,class (:foreground ,nord13 :weight bold))))
+    `(flycheck-info ((,class (:underline (:style wave :color ,nord8)))))
+    `(flycheck-warning ((,class (:underline (:style wave :color ,nord13)))))
 ))
 
 ;;;###autoload
