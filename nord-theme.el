@@ -380,7 +380,11 @@
     `(web-mode-type-face ((,class (:foreground ,nord-class))))
     `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face))))
     `(web-mode-variable-name-face ((,class (:foreground ,nord-variable))))
+
     ;; +--- UI ---+
+    ;; > Anzu
+    `(anzu-mode-line ((,class (:foreground, nord8))))
+    `(anzu-mode-line-no-match ((,class (:foreground, nord11))))
 ))
 
 ;;;###autoload
