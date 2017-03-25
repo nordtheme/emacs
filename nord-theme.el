@@ -305,6 +305,21 @@
     `(js2-error ((,class (:foreground ,nord11))))
     `(js2-warning ((,class (:foreground ,nord13))))
     `(js2-instance-member ((,class (:foreground ,nord4))))
+
+    ;; > JavaScript 3
+    `(js3-error-face ((,class (:foreground ,nord11))))
+    `(js3-external-variable-face ((,class (:foreground ,nord4))))
+    `(js3-function-param-face ((,class (:foreground ,nord4))))
+    `(js3-instance-member-face ((,class (:foreground ,nord4))))
+    `(js3-jsdoc-html-tag-delimiter-face ((,class (:foreground ,nord6))))
+    `(js3-jsdoc-html-tag-name-face ((,class (:foreground ,nord9))))
+    `(js3-jsdoc-tag-face ((,class (:foreground ,nord9))))
+    `(js3-jsdoc-type-face ((,class (:foreground ,nord7))))
+    `(js3-jsdoc-value-face ((,class (:foreground ,nord4))))
+    `(js3-magic-paren-face ((,class (:inherit show-paren-match-face))))
+    `(js3-private-function-call-face ((,class (:foreground ,nord8))))
+    `(js3-private-member-face ((,class (:foreground ,nord4))))
+    `(js3-warning-face ((,class (:foreground ,nord13))))
     ;; +--- UI ---+
 ))
 
