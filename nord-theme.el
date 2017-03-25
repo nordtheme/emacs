@@ -465,6 +465,22 @@
     `(helm-source-header ((,class (:height 1.44 :foreground ,nord8 :background ,nord2))))
     `(helm-separator ((,class (:background ,nord2))))
     `(helm-visible-mark ((,class (:background ,nord2))))
+
+    ;; > Magit
+    `(magit-branch ((,class (:foreground ,nord7 :weight bold))))
+    `(magit-diff-context-highlight ((,class (:background ,nord2))))
+    `(magit-diff-file-header ((,class (:foreground ,nord8 :box (:color ,nord8)))))
+    `(magit-diffstat-added ((,class (:foreground ,nord14))))
+    `(magit-diffstat-removed ((,class (:foreground ,nord11))))
+    `(magit-hash ((,class (:foreground ,nord8))))
+    `(magit-hunk-heading ((,class (:foreground ,nord9))))
+    `(magit-hunk-heading-highlight ((,class (:foreground ,nord9 :background ,nord2))))
+    `(magit-item-highlight ((,class (:foreground ,nord8 :background ,nord2))))
+    `(magit-log-author ((,class (:foreground ,nord7))))
+    `(magit-process-ng ((,class (:foreground ,nord13 :weight bold))))
+    `(magit-process-ok ((,class (:foreground ,nord14 :weight bold))))
+    `(magit-section-heading ((,class (:foreground ,nord7 :weight bold))))
+    `(magit-section-highlight ((,class (:background ,nord2))))
 ))
 
 ;;;###autoload
