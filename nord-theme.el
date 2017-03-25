@@ -490,6 +490,12 @@
     `(mu4e-flagged-face ((,class (:foreground ,nord13))))
     `(mu4e-unread-face ((,class (:foreground ,nord4 :weight bold))))
     `(mu4e-link-face ((,class (:underline t))))
+
+    ;; > Powerline
+    `(powerline-active1 ((,class (:foreground ,nord4 :background ,nord1))))
+    `(powerline-active2 ((,class (:foreground ,nord4 :background ,nord3))))
+    `(powerline-inactive1 ((,class (:background ,nord2))))
+    `(powerline-inactive2 ((,class (:background ,nord2))))
 ))
 
 ;;;###autoload
