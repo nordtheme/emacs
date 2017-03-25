@@ -385,6 +385,22 @@
     ;; > Anzu
     `(anzu-mode-line ((,class (:foreground, nord8))))
     `(anzu-mode-line-no-match ((,class (:foreground, nord11))))
+
+    ;; > Company
+    `(company-echo-common ((,class (:foreground ,nord0 :background ,nord4))))
+    `(company-preview ((,class (:foreground ,nord4 :background ,nord10))))
+    `(company-preview-common ((,class (:foreground ,nord0 :background ,nord8))))
+    `(company-preview-search ((,class (:foreground ,nord0 :background ,nord8))))
+    `(company-scrollbar-bg ((,class (:foreground ,nord1 :background ,nord1))))
+    `(company-scrollbar-fg ((,class (:foreground ,nord2 :background ,nord2))))
+    `(company-template-field ((,class (:foreground ,nord0 :background ,nord7))))
+    `(company-tooltip ((,class (:foreground ,nord4 :background ,nord2))))
+    `(company-tooltip-annotation ((,class (:foreground ,nord12))))
+    `(company-tooltip-annotation-selection ((,class (:foreground ,nord12 :weight bold))))
+    `(company-tooltip-common ((,class (:foreground ,nord8))))
+    `(company-tooltip-common-selection ((,class (:foreground ,nord8 :background ,nord3))))
+    `(company-tooltip-mouse ((,class (:inherit highlight))))
+    `(company-tooltip-selection ((,class (:background ,nord3 :weight bold))))
 ))
 
 ;;;###autoload
