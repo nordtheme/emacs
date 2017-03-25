@@ -260,6 +260,16 @@
     ;; > Elixir
     `(elixir-attribute-face ((,class (:foreground ,nord-annotation))))
     `(elixir-atom-face ((,class (:foreground ,nord4 :weight bold))))
+
+    ;; > Enhanced Ruby
+    `(enh-ruby-heredoc-delimiter-face ((,class (:foreground ,nord14))))
+    `(enh-ruby-op-face ((,class (:foreground ,nord9))))
+    `(enh-ruby-regexp-delimiter-face ((,class (:foreground ,nord13))))
+    `(enh-ruby-regexp-face ((,class (:foreground ,nord13))))
+    `(enh-ruby-string-delimiter-face ((,class (:foreground ,nord14))))
+    `(erm-syn-errline ((,class (:foreground ,nord11 :underline t))))
+    `(erm-syn-warnline ((,class (:foreground ,nord13 :underline t))))
+
     ;; +--- UI ---+
 ))
 
