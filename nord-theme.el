@@ -336,6 +336,17 @@
     `(markdown-markup-face ((,class (:foreground ,nord9))))
     `(markdown-reference-face ((,class (:inherit markdown-link-face))))
     `(markdown-url-face ((,class (:foreground ,nord4 :underline t))))
+
+    ;; > Rainbow Delimeters
+    `(rainbow-delimiters-depth-1-face ((,class :foreground ,nord7)))
+    `(rainbow-delimiters-depth-2-face ((,class :foreground ,nord8)))
+    `(rainbow-delimiters-depth-3-face ((,class :foreground ,nord9)))
+    `(rainbow-delimiters-depth-4-face ((,class :foreground ,nord10)))
+    `(rainbow-delimiters-depth-5-face ((,class :foreground ,nord12)))
+    `(rainbow-delimiters-depth-6-face ((,class :foreground ,nord13)))
+    `(rainbow-delimiters-depth-7-face ((,class :foreground ,nord14)))
+    `(rainbow-delimiters-depth-8-face ((,class :foreground ,nord15)))
+    `(rainbow-delimiters-unmatched-face ((,class :foreground ,nord11)))
     ;; +--- UI ---+
 ))
 
