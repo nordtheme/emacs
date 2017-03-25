@@ -2,7 +2,7 @@
 
 ;; title      Nord Emacs
 ;; project    nord-emacs
-;; version
+;; version    0.1.0
 ;; repository https://github.com/arcticicestudio/nord-emacs
 ;; author     Arctic Ice Studio
 ;; email      development@arcticicestudio.com
