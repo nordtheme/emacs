@@ -320,6 +320,22 @@
     `(js3-private-function-call-face ((,class (:foreground ,nord8))))
     `(js3-private-member-face ((,class (:foreground ,nord4))))
     `(js3-warning-face ((,class (:foreground ,nord13))))
+
+    ;; > Markdown
+    `(markdown-blockquote-face ((,class (:foreground ,nord3))))
+    `(markdown-bold-face ((,class (:inherit bold))))
+    `(markdown-header-face-1 ((,class (:foreground ,nord8))))
+    `(markdown-header-face-2 ((,class (:foreground ,nord8))))
+    `(markdown-header-face-3 ((,class (:foreground ,nord8))))
+    `(markdown-header-face-4 ((,class (:foreground ,nord8))))
+    `(markdown-header-face-5 ((,class (:foreground ,nord8))))
+    `(markdown-header-face-6 ((,class (:foreground ,nord8))))
+    `(markdown-inline-code-face ((,class (:foreground ,nord7))))
+    `(markdown-italic-face ((,class (:inherit italic))))
+    `(markdown-link-face ((,class (:foreground ,nord8))))
+    `(markdown-markup-face ((,class (:foreground ,nord9))))
+    `(markdown-reference-face ((,class (:inherit markdown-link-face))))
+    `(markdown-url-face ((,class (:foreground ,nord4 :underline t))))
     ;; +--- UI ---+
 ))
 
