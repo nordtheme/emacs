@@ -19,6 +19,7 @@ Nord Emacs is a 16 colorspace theme build to run in GUI- and terminal mode with 
       - [Manual](#manual)
       - [Package.el](#package-el)
     - [Activation](#activation)
+  - [Features](#features)
   - [Package Support](#package-support)
     - [Syntax Packages](#syntax-packages)
     - [UI Packages](#ui-packages)
@@ -64,6 +65,11 @@ Use Nord Emacs as your default color theme by adding it to your `.init.el`
 (load-theme 'nord t)
 ```
 or change it on-the-fly by running <kbd>M-x</kbd> `load-theme` <kbd>RET</kbd> `nord` <kbd>RET</kbd>.
+
+## Features
+<p align="center"><strong>Non-obtrusive bracket matching- and search marker.</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-feature-bracket-matching.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-feature-search.gif"/></p>
+
+<p align="center"><strong>Colors of selected code can still be easily recognized.</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-feature-selection.gif"/></p>
 
 ## Package Support
 Nord Emacs provides support for many third-party syntax- and the UI packages.  
