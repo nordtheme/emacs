@@ -414,6 +414,11 @@
     `(flycheck-fringe-warning ((,class (:foreground ,nord13 :weight bold))))
     `(flycheck-info ((,class (:underline (:style wave :color ,nord8)))))
     `(flycheck-warning ((,class (:underline (:style wave :color ,nord13)))))
+
+    ;; > Git Gutter
+    `(git-gutter:modified ((,class (:foreground ,nord13))))
+    `(git-gutter:added ((,class (:foreground ,nord14))))
+    `(git-gutter:deleted ((,class (:foreground ,nord11))))
 ))
 
 ;;;###autoload
