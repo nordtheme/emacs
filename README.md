@@ -12,7 +12,7 @@ Based on the <a href="https://github.com/arcticicestudio/nord">Nord</a> color pa
 
 Nord Emacs is a 16 colorspace theme build to run in GUI- and terminal mode with support for many third-party syntax- and UI packages.
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-lang-java.png"/><br><blockquote>Font: <a href="https://adobe-fonts.github.io/source-code-pro">Source Code Pro</a> 20px</blockquote></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-package-syntax-jdee.png"/><br><blockquote>Font: <a href="https://adobe-fonts.github.io/source-code-pro">Source Code Pro</a> 20px</blockquote></p>
 
   - [Getting started](#getting-started)
     - [Installation](#installation)
@@ -78,6 +78,10 @@ Detailed descriptions for supported packages can be found in the [project wiki](
 ### Syntax Packages
 <p align="center"><strong>Elixir</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-lang-elixir.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-lang-elixir-2.png"/></p>
 
+<p align="center"><strong>Java (<code>jdee</code>)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-package-syntax-jdee.png"/></p>
+
+<p align="center"><strong>JavaScript (<code>js2-mode</code>, <code>js3-mode</code>)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-package-syntax-js2.png"/></p>
+
 <p align="center"><strong>Org Mode</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-package-syntax-org.png"/></p>
 
 <p align="center"><strong>Rainbow Delimeters</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-package-syntax-rainbow-delimeters.png"/></p>
@@ -98,10 +102,6 @@ Detailed descriptions for supported languages can be found in the [project wiki]
 <p align="center"><strong>CSS</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-lang-css.png"/></p>
 
 <p align="center"><strong>diff</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-lang-diff.png"/></p>
-
-<p align="center"><strong>Java</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-lang-java.png"/></p>
-
-<p align="center"><strong>JavaScript</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-lang-javascript.png"/></p>
 
 <p align="center"><strong>Python</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-lang-python.png"/></p>
 
