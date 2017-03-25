@@ -4,6 +4,11 @@
 
 ---
 
+# 0.1.1
+*2017-03-25*
+## Bug Fixes
+❯ Fixed the package documentation format to adhere to the [MELPA contribution standard](https://github.com/melpa/melpa/blob/master/CONTRIBUTING.md). (@arcticicestudio, 8b835e60)
+
 # 0.1.0
 *2017-03-25*
 ## Features
