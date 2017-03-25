@@ -257,6 +257,9 @@
     ;;;; + Package Support +
     ;;;; +-----------------+
     ;; +--- Syntax ---+
+    ;; > Elixir
+    `(elixir-attribute-face ((,class (:foreground ,nord-annotation))))
+    `(elixir-atom-face ((,class (:foreground ,nord4 :weight bold))))
     ;; +--- UI ---+
 ))
 
