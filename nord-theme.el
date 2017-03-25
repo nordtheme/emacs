@@ -1,18 +1,18 @@
 ;;; nord-theme.el --- An arctic, north-bluish clean and elegant Emacs theme.
 
-;; title      Nord Emacs
-;; project    nord-emacs
-;; version    0.1.0
-;; repository https://github.com/arcticicestudio/nord-emacs
-;; author     Arctic Ice Studio
-;; email      development@arcticicestudio.com
-;; copyright  Copyright (C) 2017
+;; title:      Nord Emacs
+;; project:    nord-emacs
+;; version:    0.1.0
+;; repository: https://github.com/arcticicestudio/nord-emacs
+;; author:     Arctic Ice Studio
+;; email:      development@arcticicestudio.com
+;; copyright:  Copyright (C) 2017
 ;;
 ;; [References]
 ;; Awesome Emacs
 ;;   https://github.com/emacs-tw/awesome-emacs
 ;; GNU ELPA
-;;   http://elpa.gnu.org
+;;   https://elpa.gnu.org
 ;; GNU Emacs
 ;;   https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html
 ;;   https://www.gnu.org/software/emacs/manual/html_node/emacs/Creating-Custom-Themes.html
@@ -25,7 +25,8 @@
 ;; marmelade repo
 ;;   https://marmalade-repo.org
 ;; MELPA
-;;   https://melpa.milkbox.net
+;;   https://melpa.org
+;;   https://stable.melpa.org
 (unless (>= emacs-major-version 24)
   (error "Nord Emacs theme requires Emacs 24 or later!"))
 
