@@ -289,6 +289,22 @@
     `(jdee-font-lock-private-face ((,class (:foreground ,nord-keyword))))
     `(jdee-font-lock-public-face ((,class (:foreground ,nord-keyword))))
     `(jdee-font-lock-variable-face ((,class (:foreground ,nord-variable))))
+
+    ;; > JavaScript 2
+    `(js2-function-call ((,class (:foreground ,nord8))))
+    `(js2-private-function-call ((,class (:foreground ,nord8))))
+    `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,nord6))))
+    `(js2-jsdoc-html-tag-name ((,class (:foreground ,nord9))))
+    `(js2-external-variable ((,class (:foreground ,nord4))))
+    `(js2-function-param ((,class (:foreground ,nord4))))
+    `(js2-jsdoc-value ((,class (:foreground ,nord3))))
+    `(js2-jsdoc-tag ((,class (:foreground ,nord7))))
+    `(js2-jsdoc-type ((,class (:foreground ,nord7))))
+    `(js2-private-member ((,class (:foreground ,nord4))))
+    `(js2-object-property ((,class (:foreground ,nord4))))
+    `(js2-error ((,class (:foreground ,nord11))))
+    `(js2-warning ((,class (:foreground ,nord13))))
+    `(js2-instance-member ((,class (:foreground ,nord4))))
     ;; +--- UI ---+
 ))
 
