@@ -481,6 +481,15 @@
     `(magit-process-ok ((,class (:foreground ,nord14 :weight bold))))
     `(magit-section-heading ((,class (:foreground ,nord7 :weight bold))))
     `(magit-section-highlight ((,class (:background ,nord2))))
+
+    ;; > MU4E
+    `(mu4e-header-marks-face ((,class (:foreground ,nord9))))
+    `(mu4e-title-face ((,class (:foreground ,nord8))))
+    `(mu4e-header-key-face ((,class (:foreground ,nord8))))
+    `(mu4e-highlight-face ((,class (:highlight))))
+    `(mu4e-flagged-face ((,class (:foreground ,nord13))))
+    `(mu4e-unread-face ((,class (:foreground ,nord4 :weight bold))))
+    `(mu4e-link-face ((,class (:underline t))))
 ))
 
 ;;;###autoload
