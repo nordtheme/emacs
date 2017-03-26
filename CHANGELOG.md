@@ -4,6 +4,16 @@
 
 ---
 
+# 0.1.2
+*2017-03-26*
+## Bug Fixes
+❯ Some more minor fixes created by a MELPA contributor to adhere to the packaging standard. (@purcell, PR #21, 70a3ee23)
+  - Formated header conventionally, with `Commentary` and `Code` section markers
+  - Removed redundant use of *Emacs* since all `elisp` packages are for Emacs
+  - Declared Emacs `24` dependency via `Package-Requires` documentaion attribute
+  - Fixed a typo from *marmelade* to *marmalade*
+  - Added missing trailing comment line to mark the end of the theme file
+
 # 0.1.1
 *2017-03-25*
 ## Bug Fixes
@@ -16,7 +26,7 @@ Detailed information about [features](https://github.com/arcticicestudio/nord-em
 
 ❯ Implemented the main theme file [`nord-theme.el`](https://github.com/arcticicestudio/nord-emacs/blob/develop/nord-theme.el). (@arcticicestudio, #1, e51f7593)
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-lang-java.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-package-syntax-jdee.png"/></p>
 
 <p align="center"><strong>Non-obtrusive bracket matching- and search marker.</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-feature-bracket-matching.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-feature-search.gif"/></p>
 

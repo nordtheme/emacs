@@ -4,7 +4,7 @@
 
 ;; Title: Nord Theme
 ;; Project: nord-emacs
-;; Version: 0.1.1
+;; Version: 0.1.2
 ;; URL: https://github.com/arcticicestudio/nord-emacs
 ;; Author: Arctic Ice Studio <development@arcticicestudio.com>
 ;; Package-Requires: ((emacs "24"))
