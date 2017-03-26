@@ -1,14 +1,20 @@
-;;; nord-theme.el --- An arctic, north-bluish clean and elegant Emacs theme.
+;;; nord-theme.el --- An arctic, north-bluish clean and elegant theme
 
-;; title:      Nord Emacs
-;; project:    nord-emacs
-;; version:    0.1.1
-;; repository: https://github.com/arcticicestudio/nord-emacs
-;; author:     Arctic Ice Studio
-;; email:      development@arcticicestudio.com
-;; copyright:  Copyright (C) 2017
-;;
-;; [References]
+;; Copyright (C) 2017 by Arctic Ice Studio
+
+;; Title: Nord Theme
+;; Project: nord-emacs
+;; Version: 0.1.1
+;; URL: https://github.com/arcticicestudio/nord-emacs
+;; Author: Arctic Ice Studio <development@arcticicestudio.com>
+;; Package-Requires: ((emacs "24"))
+
+;;; Commentary:
+
+;; Nord is a 16 colorspace theme build to run in GUI- and terminal
+;; mode with support for many third-party syntax- and UI packages.
+
+;;; References:
 ;; Awesome Emacs
 ;;   https://github.com/emacs-tw/awesome-emacs
 ;; GNU ELPA
@@ -22,15 +28,18 @@
 ;;   https://www.gnu.org/software/emacs/manual/html_node/elisp/Face-Attributes.html
 ;;   https://www.gnu.org/software/emacs/manual/html_node/elisp/Faces-for-Font-Lock.html
 ;;   https://www.gnu.org/software/emacs/manual/html_node/elisp/Display-Feature-Testing.html
-;; marmelade repo
+;; marmalade repo
 ;;   https://marmalade-repo.org
 ;; MELPA
 ;;   https://melpa.org
 ;;   https://stable.melpa.org
-(unless (>= emacs-major-version 24)
-  (error "Nord Emacs theme requires Emacs 24 or later!"))
 
-(deftheme nord "An arctic, north-bluish clean and elegant Emacs theme")
+;;; Code:
+
+(unless (>= emacs-major-version 24)
+  (error "Nord theme requires Emacs 24 or later!"))
+
+(deftheme nord "An arctic, north-bluish clean and elegant theme")
 
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
@@ -573,3 +582,5 @@
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
 ;; End:
+
+;;; nord-theme.el ends here
