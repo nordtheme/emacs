@@ -153,7 +153,7 @@
     `(custom-set ((,class (:foreground ,nord8))))
     `(custom-state ((,class (:foreground ,nord14))))
     `(custom-themed ((,class (:foreground ,nord8 :background ,nord2))))
-    `(cursor ((,class (:foreground ,nord4))))
+    `(cursor ((,class (:background ,nord4))))
     `(fringe ((,class (:foreground ,nord4 :background ,nord0))))
     `(file-name-shadow ((,class (:inherit shadow))))
     `(header-line ((,class (:foreground ,nord4 :background ,nord2))))
