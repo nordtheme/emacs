@@ -4,7 +4,7 @@
 
 ;; Title: Nord Theme
 ;; Project: nord-emacs
-;; Version: 0.1.2
+;; Version: 0.2.0
 ;; URL: https://github.com/arcticicestudio/nord-emacs
 ;; Author: Arctic Ice Studio <development@arcticicestudio.com>
 ;; Package-Requires: ((emacs "24"))
@@ -153,7 +153,7 @@
     `(custom-set ((,class (:foreground ,nord8))))
     `(custom-state ((,class (:foreground ,nord14))))
     `(custom-themed ((,class (:foreground ,nord8 :background ,nord2))))
-    `(cursor ((,class (:foreground ,nord4))))
+    `(cursor ((,class (:background ,nord4))))
     `(fringe ((,class (:foreground ,nord4 :background ,nord0))))
     `(file-name-shadow ((,class (:inherit shadow))))
     `(header-line ((,class (:foreground ,nord4 :background ,nord2))))
@@ -183,7 +183,7 @@
     `(mode-line ((,class (:foreground ,nord4 :background ,nord2))))
     `(mode-line-buffer-id ((,class (:weight bold))))
     `(mode-line-highlight ((,class (:inherit highlight))))
-    `(mode-line-inactive ((,class (:foreground ,nord3 :background ,nord1))))
+    `(mode-line-inactive ((,class (:foreground ,nord4 :background ,nord1))))
     `(next-error ((,class (:inherit error))))
     `(nobreak-space ((,class (:foreground ,nord3))))
     `(outline-1 ((,class (:foreground ,nord8 :weight bold))))
@@ -244,10 +244,7 @@
     `(vc-state-base ((,class (:foreground ,nord4))))
     `(vc-up-to-date-state ((,class (:foreground ,nord8))))
     `(vertical-border ((,class (:foreground ,nord2))))
-    `(widget-button-pressed ((,class (:foreground ,nord9 :background ,nord1))))
-    `(widget-documentation ((,class (:foreground ,nord4))))
-    `(widget-field ((,class (:background ,nord2 :foreground ,nord4))))
-    `(widget-single-line-field ((,class (:background ,nord2 :foreground ,nord4))))
+    `(which-func ((,class (:foreground ,nord8))))
     `(whitespace-big-indent ((,class (:foreground ,nord3 :background ,nord0))))
     `(whitespace-empty ((,class (:foreground ,nord3 :background ,nord0))))
     `(whitespace-hspace ((,class (:foreground ,nord3 :background ,nord0))))
@@ -259,6 +256,10 @@
     `(whitespace-space-before-tab ((,class (:foreground ,nord3 :background ,nord0))))
     `(whitespace-tab ((,class (:foreground ,nord3 :background ,nord0))))
     `(whitespace-trailing ((,class (:inherit trailing-whitespace))))
+    `(widget-button-pressed ((,class (:foreground ,nord9 :background ,nord1))))
+    `(widget-documentation ((,class (:foreground ,nord4))))
+    `(widget-field ((,class (:background ,nord2 :foreground ,nord4))))
+    `(widget-single-line-field ((,class (:background ,nord2 :foreground ,nord4))))
     `(window-divider ((,class (:background ,nord3))))
     `(window-divider-first-pixel ((,class (:background ,nord3))))
     `(window-divider-last-pixel ((,class (:background ,nord3))))
