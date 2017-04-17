@@ -4,9 +4,27 @@
 
 ---
 
+# 0.2.0
+*2017-04-17*
+## Features
+### Mode Support
+❯ Implemented support for the `which-function-mode`. (@microamp, #28, f7a2f6e6)
+
+<p align="center"><strong>Before</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/24758354/6ed3c51c-1ae2-11e7-8a18-b58c1d0e6185.png"/><br><strong>After</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/24758374/7bc489aa-1ae2-11e7-9eba-6657425a3936.png"/></p>
+
+## Improvements
+### UI
+❯ The text color of inactive mode lines are now colorized with `nord4` instead of `nord3` to increase the readability. (@cavd, #25, 067b9bbe)
+
+## Bug Fixes
+❯ Fixed the color of the `cursor` face caused by using the wrong attribute `:foreground` instead of `:background`. (@spegoraro, #24, b11fb535)
+
+<p align="center"><strong>Before</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/25084545/66ecc672-235d-11e7-9526-cf8ab338238f.png"/><br><strong>After</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/24761805/c1a9d858-1aec-11e7-914b-06d98d8802eb.png"/></p>
+
 # 0.1.2
 *2017-03-26*
 ## Bug Fixes
+### UI
 ❯ Some more minor fixes created by a MELPA contributor to adhere to the packaging standard. (@purcell, PR #21, 70a3ee23)
   - Formated header conventionally, with `Commentary` and `Code` section markers
   - Removed redundant use of *Emacs* since all `elisp` packages are for Emacs
