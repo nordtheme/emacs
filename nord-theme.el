@@ -474,8 +474,10 @@
     `(helm-selection ((,class (:inherit highlight))))
     `(helm-selection-line ((,class (:background ,nord2))))
     `(helm-source-header ((,class (:height 1.44 :foreground ,nord8 :background ,nord2))))
+    `(helm-swoop-line-number-face ((,class (:foreground ,nord4 :background ,nord0))))
     `(helm-swoop-target-word-face ((,class (:foreground ,nord0 :background ,nord7))))
     `(helm-swoop-target-line-face ((,class (:background ,nord13 :foreground ,nord3))))
+    `(helm-swoop-target-line-block-face ((,class (:background ,nord13 :foreground ,nord3))))
     `(helm-separator ((,class (:background ,nord2))))
     `(helm-visible-mark ((,class (:background ,nord2))))
 
