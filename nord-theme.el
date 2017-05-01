@@ -268,18 +268,18 @@
     ;;;; +-----------------+
     ;; +--- Syntax ---+
     ;; > Auctex
-    `(font-latex-bold-face         ((,class (:inherit bold))))
-    `(font-latex-italic-face       ((,class (:inherit italic))))
-    `(font-latex-math-face         ((,class (:foreground ,nord8))))
+    `(font-latex-bold-face ((,class (:inherit bold))))
+    `(font-latex-italic-face ((,class (:inherit italic))))
+    `(font-latex-math-face ((,class (:foreground ,nord8))))
     `(font-latex-sectioning-0-face ((,class (:foreground ,nord8 :weight bold))))
     `(font-latex-sectioning-1-face ((,class (:inherit font-latex-sectioning-0-face))))
     `(font-latex-sectioning-2-face ((,class (:inherit font-latex-sectioning-0-face))))
     `(font-latex-sectioning-3-face ((,class (:inherit font-latex-sectioning-0-face))))
     `(font-latex-sectioning-4-face ((,class (:inherit font-latex-sectioning-0-face))))
     `(font-latex-sectioning-5-face ((,class (:inherit font-latex-sectioning-0-face))))
-    `(font-latex-script-char-face  ((,class (:inherit font-lock-warning-face))))
-    `(font-latex-string-face       ((,class (:inherit font-lock-string-face))))
-    `(font-latex-warning-face      ((,class (:inherit font-lock-warning-face))))
+    `(font-latex-script-char-face ((,class (:inherit font-lock-warning-face))))
+    `(font-latex-string-face ((,class (:inherit font-lock-string-face))))
+    `(font-latex-warning-face ((,class (:inherit font-lock-warning-face))))
 
     ;; > Elixir
     `(elixir-attribute-face ((,class (:foreground ,nord-annotation))))
