@@ -445,6 +445,11 @@
     `(git-gutter:added ((,class (:foreground ,nord14))))
     `(git-gutter:deleted ((,class (:foreground ,nord11))))
 
+    ;; > Git Gutter Plus
+    `(git-gutter+-modified ((,class (:foreground ,nord13))))
+    `(git-gutter+-added ((,class (:foreground ,nord14))))
+    `(git-gutter+-deleted ((,class (:foreground ,nord11))))
+
     ;; > Helm
     `(helm-bookmark-addressbook ((,class (:foreground ,nord7))))
     `(helm-bookmark-directory ((,class (:foreground ,nord9))))
