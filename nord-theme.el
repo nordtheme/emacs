@@ -538,6 +538,12 @@
     `(powerline-evil-visual-face ((,class (:foreground ,nord0 :background ,nord7))))
     `(powerline-evil-replace-face ((,class (:foreground ,nord0 :background ,nord9))))
 
+    ;; > NeoTree
+    `(neo-dir-link-face ((,class (:foreground ,nord5))))
+    `(neo-expand-btn-face ((,class (:foreground ,nord6 :bold t))))
+    `(neo-file-link-face ((,class (:foreground ,nord6))))
+    `(neo-root-dir-face ((,class (:foreground ,nord6))))
+
     ;; > Org
     `(org-level-1 ((,class (:foreground ,nord8 :weight bold))))
     `(org-level-2 ((,class (:inherit org-level-1))))
