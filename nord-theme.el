@@ -539,10 +539,10 @@
     `(powerline-evil-replace-face ((,class (:foreground ,nord0 :background ,nord9))))
 
     ;; > NeoTree
-    `(neo-dir-link-face ((,class (:foreground ,nord5))))
+    `(neo-dir-link-face ((,class (:foreground ,nord9))))
     `(neo-expand-btn-face ((,class (:foreground ,nord6 :bold t))))
-    `(neo-file-link-face ((,class (:foreground ,nord6))))
-    `(neo-root-dir-face ((,class (:foreground ,nord6))))
+    `(neo-file-link-face ((,class (:foreground ,nord4))))
+    `(neo-root-dir-face ((,class (:foreground ,nord7 :weight bold))))
 
     ;; > Org
     `(org-level-1 ((,class (:foreground ,nord8 :weight bold))))
