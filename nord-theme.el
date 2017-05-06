@@ -528,7 +528,7 @@
     `(mu4e-header-key-face ((,class (:foreground ,nord8))))
     `(mu4e-highlight-face ((,class (:highlight))))
     `(mu4e-flagged-face ((,class (:foreground ,nord13))))
-    `(mu4e-unread-face ((,class (:foreground ,nord4 :weight bold))))
+    `(mu4e-unread-face ((,class (:foreground ,nord13 :weight bold))))
     `(mu4e-link-face ((,class (:underline t))))
 
     ;; > Powerline
