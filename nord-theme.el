@@ -433,6 +433,11 @@
     `(company-tooltip-mouse ((,class (:inherit highlight))))
     `(company-tooltip-selection ((,class (:background ,nord3 :weight bold))))
 
+    ;; > diff-hl
+   `(diff-hl-change ((,class (:background ,nord13))))
+   `(diff-hl-insert ((,class (:background ,nord14))))
+   `(diff-hl-delete ((,class (:background ,nord11))))
+   
     ;; > Evil
     `(evil-ex-info ((,class (:foreground ,nord8))))
     `(evil-ex-substitute-replacement ((,class (:foreground ,nord9))))
