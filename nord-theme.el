@@ -539,10 +539,22 @@
     `(powerline-evil-replace-face ((,class (:foreground ,nord0 :background ,nord9))))
 
     ;; > NeoTree
+    `(neo-banner-face ((,class (:foreground ,nord10))))
     `(neo-dir-link-face ((,class (:foreground ,nord9))))
     `(neo-expand-btn-face ((,class (:foreground ,nord6 :bold t))))
     `(neo-file-link-face ((,class (:foreground ,nord4))))
     `(neo-root-dir-face ((,class (:foreground ,nord7 :weight bold))))
+    `(neo-vc-added-face ((,class (:foreground ,nord14))))
+    `(neo-vc-conflict-face ((,class (:foreground ,nord11))))
+    `(neo-vc-default-face ((,class (:foreground ,nord4))))
+    `(neo-vc-edited-face ((,class (:foreground ,nord13))))
+    `(neo-vc-ignored-face ((,class (:foreground ,nord3))))
+    `(neo-vc-missing-face ((,class (:foreground ,nord12))))
+    `(neo-vc-needs-merge-face ((,class (:background ,nord12 :foreground ,nord4))))
+    `(neo-vc-needs-update-face ((,class (:background ,nord10 :foreground ,nord4))))
+    `(neo-vc-removed-face ((,class (:foreground ,nord11 :strike-through nil))))
+    `(neo-vc-up-to-date-face ((,class (:foreground ,nord4))))
+    `(neo-vc-user-face ((,class (:foreground ,nord4))))
 
     ;; > Org
     `(org-level-1 ((,class (:foreground ,nord8 :weight bold))))
