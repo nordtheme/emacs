@@ -411,6 +411,12 @@
     `(anzu-mode-line ((,class (:foreground, nord8))))
     `(anzu-mode-line-no-match ((,class (:foreground, nord11))))
 
+    ;; > Avy
+    `(avy-lead-face ((,class (:background ,nord11 :foreground ,nord5))))
+    `(avy-lead-face-0 ((,class (:background ,nord10 :foreground ,nord5))))
+    `(avy-lead-face-1 ((,class (:background ,nord3 :foreground ,nord5))))
+    `(avy-lead-face-2 ((,class (:background ,nord15 :foreground ,nord5))))
+
     ;; > Company
     `(company-echo-common ((,class (:foreground ,nord0 :background ,nord4))))
     `(company-preview ((,class (:foreground ,nord4 :background ,nord10))))
