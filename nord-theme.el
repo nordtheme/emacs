@@ -4,7 +4,7 @@
 
 ;; Title: Nord Theme
 ;; Project: nord-emacs
-;; Version: 0.2.0
+;; Version: 0.3.0
 ;; URL: https://github.com/arcticicestudio/nord-emacs
 ;; Author: Arctic Ice Studio <development@arcticicestudio.com>
 ;; Package-Requires: ((emacs "24"))
@@ -268,6 +268,20 @@
     ;;;; + Package Support +
     ;;;; +-----------------+
     ;; +--- Syntax ---+
+    ;; > Auctex
+    `(font-latex-bold-face ((,class (:inherit bold))))
+    `(font-latex-italic-face ((,class (:inherit italic))))
+    `(font-latex-math-face ((,class (:foreground ,nord8))))
+    `(font-latex-sectioning-0-face ((,class (:foreground ,nord8 :weight bold))))
+    `(font-latex-sectioning-1-face ((,class (:inherit font-latex-sectioning-0-face))))
+    `(font-latex-sectioning-2-face ((,class (:inherit font-latex-sectioning-0-face))))
+    `(font-latex-sectioning-3-face ((,class (:inherit font-latex-sectioning-0-face))))
+    `(font-latex-sectioning-4-face ((,class (:inherit font-latex-sectioning-0-face))))
+    `(font-latex-sectioning-5-face ((,class (:inherit font-latex-sectioning-0-face))))
+    `(font-latex-script-char-face ((,class (:inherit font-lock-warning-face))))
+    `(font-latex-string-face ((,class (:inherit font-lock-string-face))))
+    `(font-latex-warning-face ((,class (:inherit font-lock-warning-face))))
+
     ;; > Elixir
     `(elixir-attribute-face ((,class (:foreground ,nord-annotation))))
     `(elixir-atom-face ((,class (:foreground ,nord4 :weight bold))))
@@ -397,6 +411,12 @@
     `(anzu-mode-line ((,class (:foreground, nord8))))
     `(anzu-mode-line-no-match ((,class (:foreground, nord11))))
 
+    ;; > Avy
+    `(avy-lead-face ((,class (:background ,nord11 :foreground ,nord5))))
+    `(avy-lead-face-0 ((,class (:background ,nord10 :foreground ,nord5))))
+    `(avy-lead-face-1 ((,class (:background ,nord3 :foreground ,nord5))))
+    `(avy-lead-face-2 ((,class (:background ,nord15 :foreground ,nord5))))
+
     ;; > Company
     `(company-echo-common ((,class (:foreground ,nord0 :background ,nord4))))
     `(company-preview ((,class (:foreground ,nord4 :background ,nord10))))
@@ -413,6 +433,11 @@
     `(company-tooltip-mouse ((,class (:inherit highlight))))
     `(company-tooltip-selection ((,class (:background ,nord3 :weight bold))))
 
+    ;; > diff-hl
+   `(diff-hl-change ((,class (:background ,nord13))))
+   `(diff-hl-insert ((,class (:background ,nord14))))
+   `(diff-hl-delete ((,class (:background ,nord11))))
+   
     ;; > Evil
     `(evil-ex-info ((,class (:foreground ,nord8))))
     `(evil-ex-substitute-replacement ((,class (:foreground ,nord9))))
@@ -430,6 +455,11 @@
     `(git-gutter:modified ((,class (:foreground ,nord13))))
     `(git-gutter:added ((,class (:foreground ,nord14))))
     `(git-gutter:deleted ((,class (:foreground ,nord11))))
+
+    ;; > Git Gutter Plus
+    `(git-gutter+-modified ((,class (:foreground ,nord13))))
+    `(git-gutter+-added ((,class (:foreground ,nord14))))
+    `(git-gutter+-deleted ((,class (:foreground ,nord11))))
 
     ;; > Helm
     `(helm-bookmark-addressbook ((,class (:foreground ,nord7))))
@@ -474,6 +504,10 @@
     `(helm-selection ((,class (:inherit highlight))))
     `(helm-selection-line ((,class (:background ,nord2))))
     `(helm-source-header ((,class (:height 1.44 :foreground ,nord8 :background ,nord2))))
+    `(helm-swoop-line-number-face ((,class (:foreground ,nord4 :background ,nord0))))
+    `(helm-swoop-target-word-face ((,class (:foreground ,nord0 :background ,nord7))))
+    `(helm-swoop-target-line-face ((,class (:background ,nord13 :foreground ,nord3))))
+    `(helm-swoop-target-line-block-face ((,class (:background ,nord13 :foreground ,nord3))))
     `(helm-separator ((,class (:background ,nord2))))
     `(helm-visible-mark ((,class (:background ,nord2))))
 
@@ -499,7 +533,7 @@
     `(mu4e-header-key-face ((,class (:foreground ,nord8))))
     `(mu4e-highlight-face ((,class (:highlight))))
     `(mu4e-flagged-face ((,class (:foreground ,nord13))))
-    `(mu4e-unread-face ((,class (:foreground ,nord4 :weight bold))))
+    `(mu4e-unread-face ((,class (:foreground ,nord13 :weight bold))))
     `(mu4e-link-face ((,class (:underline t))))
 
     ;; > Powerline
@@ -514,6 +548,24 @@
     `(powerline-evil-insert-face ((,class (:foreground ,nord0 :background ,nord4))))
     `(powerline-evil-visual-face ((,class (:foreground ,nord0 :background ,nord7))))
     `(powerline-evil-replace-face ((,class (:foreground ,nord0 :background ,nord9))))
+
+    ;; > NeoTree
+    `(neo-banner-face ((,class (:foreground ,nord10))))
+    `(neo-dir-link-face ((,class (:foreground ,nord9))))
+    `(neo-expand-btn-face ((,class (:foreground ,nord6 :bold t))))
+    `(neo-file-link-face ((,class (:foreground ,nord4))))
+    `(neo-root-dir-face ((,class (:foreground ,nord7 :weight bold))))
+    `(neo-vc-added-face ((,class (:foreground ,nord14))))
+    `(neo-vc-conflict-face ((,class (:foreground ,nord11))))
+    `(neo-vc-default-face ((,class (:foreground ,nord4))))
+    `(neo-vc-edited-face ((,class (:foreground ,nord13))))
+    `(neo-vc-ignored-face ((,class (:foreground ,nord3))))
+    `(neo-vc-missing-face ((,class (:foreground ,nord12))))
+    `(neo-vc-needs-merge-face ((,class (:background ,nord12 :foreground ,nord4))))
+    `(neo-vc-needs-update-face ((,class (:background ,nord10 :foreground ,nord4))))
+    `(neo-vc-removed-face ((,class (:foreground ,nord11 :strike-through nil))))
+    `(neo-vc-up-to-date-face ((,class (:foreground ,nord4))))
+    `(neo-vc-user-face ((,class (:foreground ,nord4))))
 
     ;; > Org
     `(org-level-1 ((,class (:foreground ,nord8 :weight bold))))
