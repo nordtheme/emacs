@@ -49,7 +49,7 @@ Make sure to install one of the currently supported terminal themes listed below
 #### Package.el
 Nord Emacs is avaiable as `package.el`-compatible Emacs Lisp package via [MELPA](https://melpa.org), [MELPA Stable](https://stable.melpa.org) and [marmalade-repo](https://marmalade-repo.org).
 
-> <kbd>M-x</kbd> `package-install` <kbd>RET</kbd> `nord` <kbd>RET</kbd>
+> <kbd>M-x</kbd> `package-install` <kbd>RET</kbd> `nord-theme` <kbd>RET</kbd>
 
 #### Manual
 [Download](https://github.com/arcticicestudio/nord-emacs/releases/latest) the latest version or clone the repository and copy the [`nord-theme.el`](https://github.com/arcticicestudio/nord-emacs/blob/develop/nord-theme.el) theme file to your `~/.emacs.d/themes` directory.
