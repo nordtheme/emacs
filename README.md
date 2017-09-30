@@ -20,6 +20,8 @@ Nord Emacs is a 16 colorspace theme build to run in GUI- and terminal mode with 
       - [Package.el](#package-el)
     - [Activation](#activation)
   - [Features](#features)
+  - [Customization](#customization)
+    - [Region Highlight Style](#region-highlight-style)
   - [Package Support](#package-support)
     - [Syntax Packages](#syntax-packages)
     - [UI Packages](#ui-packages)
@@ -70,6 +72,24 @@ or change it on-the-fly by running <kbd>M-x</kbd> `load-theme` <kbd>RET</kbd> `n
 <p align="center"><strong>Non-obtrusive bracket matching- and search marker.</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-feature-bracket-matching.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-feature-search.gif"/></p>
 
 <p align="center"><strong>Colors of selected code can still be easily recognized.</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-feature-selection.gif"/></p>
+
+## Customization
+
+All customizations need to be set before `load-theme` is invoked for Nord and require a restart of Emacs when changed!
+
+### Region Highlight Style
+
+Allows to set a style for the region highlight based on the Nord components, either to `snowstorm` or `frost`.
+
+To adhere to the Nord style guide this option uses `nord2` as background- and no specific foreground color.
+
+It can be enabled by setting the `nord-region-highlight` variable to the desired style `snowstorm` or `frost` in your `init.el`:
+
+```lisp
+(setq nord-region-highlight "snowstorm")
+```
+
+<align="center"><strong><code>snowstorm</code> region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-snowstorm.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-snowstorm.gif"/><br><strong><code>frost</code> region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-frost.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-frost.gif"/><br><strong>default region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-default.gif"/></p>
 
 ## Package Support
 Nord Emacs provides support for many third-party syntax- and the UI packages.  

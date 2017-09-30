@@ -42,6 +42,19 @@
 
 (deftheme nord "An arctic, north-bluish clean and elegant theme")
 
+(defgroup nord nil
+  "Nord theme customizations.
+  The theme has to be reloaded after changing anything in this group."
+  :group 'faces)
+ 
+(defcustom nord-region-highlight nil
+  "Allows to set a region highlight style based on the Nord components.
+  Valid styles are
+    - 'snowstorm' - Uses 'nord0' as foreground- and 'nord4' as background color
+    - 'frost' - Uses 'nord0' as foreground- and 'nord8' as background color"
+  :type 'string
+  :group 'nord)
+
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
   (nord0 (if (display-graphic-p) "#2E3440" nil))
@@ -74,7 +87,13 @@
   (nord-regexp (if (display-graphic-p) "#EBCB8B" "yellow"))
   (nord-string (if (display-graphic-p) "#A3BE8C" "green"))
   (nord-tag (if (display-graphic-p) "#81A1C1" "blue"))
-  (nord-variable (if (display-graphic-p) "#D8DEE9" "#D8DEE9")))
+  (nord-variable (if (display-graphic-p) "#D8DEE9" "#D8DEE9"))
+  (nord-region-highlight-foreground (if (or 
+    (string= nord-region-highlight "frost") 
+    (string= nord-region-highlight "snowstorm")) "#2E3440" nil))
+  (nord-region-highlight-background (if 
+    (string= nord-region-highlight "frost") "#88C0D0" 
+      (if (string= nord-region-highlight "snowstorm") "#D8DEE9" "#434C5E"))))
 
 ;;;; +------------+
 ;;;; + Core Faces +
@@ -210,7 +229,7 @@
     `(package-status-installed ((,class (:foreground ,nord7 :weight bold))))
     `(package-status-unsigned ((,class (:underline ,nord13))))
     `(query-replace ((,class (:foreground ,nord8 :background ,nord2))))
-    `(region ((,class (:background ,nord2))))
+    `(region ((,class (:foreground ,nord-region-highlight-foreground :background ,nord-region-highlight-background))))
     `(scroll-bar ((,class (:background ,nord3))))
     `(secondary-selection ((,class (:background ,nord2))))
     `(show-paren-match-face ((,class (:foreground ,nord0 :background ,nord8))))
