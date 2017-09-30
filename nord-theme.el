@@ -42,6 +42,28 @@
 
 (deftheme nord "An arctic, north-bluish clean and elegant theme")
 
+(defgroup nord nil
+  "Nord theme customizations.
+The theme has to be reloaded after changing anything in this group."
+:group 'faces)
+
+(defcustom nord-comment-brightness 0
+  "Allows to define a custom comment color brightness with percentage adjustments from 0% - 20%.
+  The value must be greater or equal to 0 and less or equal to 20, otherwise the default 'nord3' color is used."
+  :type 'integer
+  :group 'nord)
+
+(setq nord-brightened-comments '("#4c566a" "#4e586d" "#505b70" "#525d73" "#556076" "#576279" "#59647c" "#5b677f" "#5d6982" "#5f6c85" "#616e88" "#63718b" "#66738e" "#687591" "#6a7894" "#6d7a96" "#6f7d98" "#72809a" "#75829c" "#78859e" "#7b88a1"))
+
+(defun brightened-comment-color (percent)
+  "Returns the brightened comment color for the given percent.
+  The value must be greater or equal to 0 and less or equal to 20, otherwise the default 'nord3' color is used."
+  (if (and (integerp percent) 
+          (>= percent 0) 
+          (<= percent 20)) 
+    (nth percent nord-brightened-comments)
+    (nth 0 nord-brightened-comments)))
+
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
   (nord0 (if (display-graphic-p) "#2E3440" nil))
@@ -63,7 +85,7 @@
   (nord-annotation (if (display-graphic-p) "#D08770" "brightyellow"))
   (nord-attribute (if (display-graphic-p) "#8FBCBB" "cyan"))
   (nord-class (if (display-graphic-p) "#8FBCBB" "cyan"))
-  (nord-comment (if (display-graphic-p) "#4C566A" "brightblack"))
+  (nord-comment (if (display-graphic-p) (brightened-comment-color nord-comment-brightness) "brightblack"))
   (nord-escape (if (display-graphic-p) "#D08770" "brightyellow"))
   (nord-method (if (display-graphic-p) "#88C0D0" "brightcyan"))
   (nord-keyword (if (display-graphic-p) "#81A1C1" "blue"))
@@ -88,10 +110,10 @@
     `(error ((,class (:foreground ,nord11 :weight bold))))
     `(escape-glyph ((,class (:foreground ,nord12))))
     `(font-lock-builtin-face ((,class (:foreground ,nord9))))
-    `(font-lock-comment-face ((,class (:foreground ,nord3))))
-    `(font-lock-comment-delimiter-face ((,class (:foreground ,nord3))))
+    `(font-lock-comment-face ((,class (:foreground ,nord-comment))))
+    `(font-lock-comment-delimiter-face ((,class (:foreground ,nord-comment))))
     `(font-lock-constant-face ((,class (:foreground ,nord9))))
-    `(font-lock-doc-face ((,class (:foreground ,nord3))))
+    `(font-lock-doc-face ((,class (:foreground ,nord-comment))))
     `(font-lock-function-name-face ((,class (:foreground ,nord8))))
     `(font-lock-keyword-face ((,class (:foreground ,nord9))))
     `(font-lock-negation-char-face ((,class (:foreground ,nord9))))
@@ -142,7 +164,7 @@
     `(custom-button-pressed-unraised ((,class (:background ,nord4 :foreground ,nord0 :box (:line-width 2 :color ,nord4 :style sunken-button)))))
     `(custom-button-unraised ((,class (:background ,nord0 :foreground ,nord8 :box (:line-width 2 :color ,nord4 :style sunken-button)))))
     `(custom-changed ((,class (:foreground ,nord13))))
-    `(custom-comment ((,class (:foreground ,nord3))))
+    `(custom-comment ((,class (:foreground ,nord-comment))))
     `(custom-comment-tag ((,class (:foreground ,nord7))))
     `(custom-documentation ((,class (:foreground ,nord4))))
     `(custom-group-tag ((,class (:foreground ,nord8 :weight bold))))
@@ -323,7 +345,7 @@
     `(js2-jsdoc-html-tag-name ((,class (:foreground ,nord9))))
     `(js2-external-variable ((,class (:foreground ,nord4))))
     `(js2-function-param ((,class (:foreground ,nord4))))
-    `(js2-jsdoc-value ((,class (:foreground ,nord3))))
+    `(js2-jsdoc-value ((,class (:foreground ,nord-comment))))
     `(js2-jsdoc-tag ((,class (:foreground ,nord7))))
     `(js2-jsdoc-type ((,class (:foreground ,nord7))))
     `(js2-private-member ((,class (:foreground ,nord4))))
@@ -348,7 +370,7 @@
     `(js3-warning-face ((,class (:foreground ,nord13))))
 
     ;; > Markdown
-    `(markdown-blockquote-face ((,class (:foreground ,nord3))))
+    `(markdown-blockquote-face ((,class (:foreground ,nord-comment))))
     `(markdown-bold-face ((,class (:inherit bold))))
     `(markdown-header-face-1 ((,class (:foreground ,nord8))))
     `(markdown-header-face-2 ((,class (:foreground ,nord8))))

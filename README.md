@@ -20,6 +20,8 @@ Nord Emacs is a 16 colorspace theme build to run in GUI- and terminal mode with 
       - [Package.el](#package-el)
     - [Activation](#activation)
   - [Features](#features)
+  - [Customization](#customization)
+    - [Custom Comment Brightness](#custom-comment-brightness)
   - [Package Support](#package-support)
     - [Syntax Packages](#syntax-packages)
     - [UI Packages](#ui-packages)
@@ -71,6 +73,50 @@ or change it on-the-fly by running <kbd>M-x</kbd> `load-theme` <kbd>RET</kbd> `n
 
 <p align="center"><strong>Colors of selected code can still be easily recognized.</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-feature-selection.gif"/></p>
 
+## Customization
+
+All customizations need to be set before `load-theme` is invoked for Nord and require a restart of Emacs when changed!
+
+### Custom Comment Brightness
+
+This customization allows to define a custom comment color brightness with percentage adjustments from *0* - *20*. It is a way to provide a way for users to easily adjust the comment color to fit their needs without overriding specific faces individually.
+
+It can be enabled by adding the `nord-comment-brightness` variable to a number between `1` and `20` in your `init.el`:
+
+```lisp
+(setq nord-comment-brightness 15)
+```
+
+To adhere to the Nord style guide this option uses `nord3` by default and applied as fallback when the variable is assigned a invalid value.
+
+This customization is a port of the reference implementation from the [Nord Atom Syntax][nord-atom-syntax-gh-47] project. The values are calculated using the LESSCSS [`lighten`][lesscss-doc-lighten] function to ensure full interoperability with other port projects that providing this theme feature.
+
+| Increased by | Calculated value |
+| --- | --- |
+| 0%  (default) | `nord3` |
+| 1% | `#4e586d` |
+| 2% | `#505b70` |
+| 3% | `#525d73` |
+| 4% | `#556076` |
+| 5% | `#576279` |
+| 6% | `#59647c` |
+| 7% | `#5b677f` |
+| 8% | `#5d6982` |
+| 9% | `#5f6c85` |
+| 10% | `#616e88` |
+| 11% | `#63718b` |
+| 12% | `#66738e` |
+| 13% | `#687591` |
+| 14% | `#6a7894` |
+| 15% | `#6d7a96` |
+| 16% | `#6f7d98` |
+| 17% | `#72809a` |
+| 18% | `#75829c` |
+| 19% | `#78859e` |
+| 20% | `#7b88a1` |
+
+<align="center"><strong>Default comment brightness</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-java-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-js-default.png"/><br><strong>Increased comment brightness by 15%</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-java-15percent.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-js-15percent.png"/></p>
+
 ## Package Support
 Nord Emacs provides support for many third-party syntax- and the UI packages.  
 Detailed descriptions for supported packages can be found in the [project wiki](https://github.com/arcticicestudio/nord-emacs/wiki).
@@ -118,3 +164,6 @@ Please report issues/bugs, feature requests and suggestions for improvements to 
 <p align="center"> <img src="http://arcticicestudio.com/favicon.ico" width=16 height=16/> Copyright &copy; 2017 Arctic Ice Studio</p>
 
 <p align="center"><a href="http://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/License-Apache_2.0-5E81AC.svg?style=flat-square"/></a> <a href="https://creativecommons.org/licenses/by-sa/4.0"><img src="https://img.shields.io/badge/License-CC_BY--SA_4.0-5E81AC.svg?style=flat-square"/></a></p>
+
+[lesscss-doc-lighten]: http://lesscss.org/functions/#color-operations-lighten
+[nord-atom-syntax-gh-47]: https://github.com/arcticicestudio/nord-atom-syntax/issues/47
