@@ -42,6 +42,16 @@
 
 (deftheme nord "An arctic, north-bluish clean and elegant theme")
 
+(defgroup nord nil
+  "Nord theme customizations.
+  The theme has to be reloaded after changing anything in this group."
+  :group 'faces)
+ 
+(defcustom nord-uniform-mode-lines nil
+  "Enables uniform activate- and inactive mode lines using 'nord3' as background."
+  :type 'boolean
+  :group 'nord)
+
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
   (nord0 (if (display-graphic-p) "#2E3440" nil))
@@ -74,7 +84,8 @@
   (nord-regexp (if (display-graphic-p) "#EBCB8B" "yellow"))
   (nord-string (if (display-graphic-p) "#A3BE8C" "green"))
   (nord-tag (if (display-graphic-p) "#81A1C1" "blue"))
-  (nord-variable (if (display-graphic-p) "#D8DEE9" "#D8DEE9")))
+  (nord-variable (if (display-graphic-p) "#D8DEE9" "#D8DEE9"))
+  (nord-uniform-mode-lines-background (if nord-uniform-mode-lines "#4C566A" "#3B4252")))
 
 ;;;; +------------+
 ;;;; + Core Faces +
@@ -181,10 +192,10 @@
     `(message-separator ((,class (:inherit shadow))))
     `(minibuffer-prompt ((,class (:foreground ,nord8 :weight bold))))
     `(mm-command-output ((,class (:foreground ,nord8))))
-    `(mode-line ((,class (:foreground ,nord4 :background ,nord2))))
+    `(mode-line ((,class (:foreground ,nord8 :background ,nord3))))
     `(mode-line-buffer-id ((,class (:weight bold))))
     `(mode-line-highlight ((,class (:inherit highlight))))
-    `(mode-line-inactive ((,class (:foreground ,nord4 :background ,nord1))))
+    `(mode-line-inactive ((,class (:foreground ,nord4 :background ,nord-uniform-mode-lines-background))))
     `(next-error ((,class (:inherit error))))
     `(nobreak-space ((,class (:foreground ,nord3))))
     `(outline-1 ((,class (:foreground ,nord8 :weight bold))))
