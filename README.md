@@ -23,6 +23,7 @@ Nord Emacs is a 16 colorspace theme build to run in GUI- and terminal mode with 
   - [Customization](#customization)
     - [Custom Comment Brightness](#custom-comment-brightness)
     - [Region Highlight Style](#region-highlight-style)
+    - [Uniform Mode Lines](#uniform-mode-lines)
   - [Package Support](#package-support)
     - [Syntax Packages](#syntax-packages)
     - [UI Packages](#ui-packages)
@@ -131,6 +132,18 @@ It can be enabled by setting the `nord-region-highlight` variable to the desired
 ```
 
 <align="center"><strong><code>snowstorm</code> region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-snowstorm.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-snowstorm.gif"/><br><strong><code>frost</code> region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-frost.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-frost.gif"/><br><strong>default region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-default.gif"/></p>
+
+### Uniform Mode Lines
+
+Enables uniform activate- and inactive mode lines using `nord3` as background.
+
+It can be activated by setting the `nord-uniform-mode-lines` variable to `t` in your `init.el`:
+
+```lisp
+(setq nord-uniform-mode-lines t)
+```
+
+<align="center"><strong>Default mode lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-uniform-mode-lines-default.png"/><br><strong>Uniform mode lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-uniform-mode-lines.png"/></p>
 
 ## Package Support
 Nord Emacs provides support for many third-party syntax- and the UI packages.  

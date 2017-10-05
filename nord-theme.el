@@ -61,6 +61,11 @@
   :type 'string
   :group 'nord)
 
+(defcustom nord-uniform-mode-lines nil
+  "Enables uniform activate- and inactive mode lines using 'nord3' as background."
+  :type 'boolean
+  :group 'nord)
+
 (setq nord-brightened-comments '("#4c566a" "#4e586d" "#505b70" "#525d73" "#556076" "#576279" "#59647c" "#5b677f" "#5d6982" "#5f6c85" "#616e88" "#63718b" "#66738e" "#687591" "#6a7894" "#6d7a96" "#6f7d98" "#72809a" "#75829c" "#78859e" "#7b88a1"))
 
 (defun brightened-comment-color (percent)
@@ -110,7 +115,8 @@
     (string= nord-region-highlight "snowstorm")) "#2E3440" nil))
   (nord-region-highlight-background (if
     (string= nord-region-highlight "frost") "#88C0D0"
-      (if (string= nord-region-highlight "snowstorm") "#D8DEE9" "#434C5E"))))
+      (if (string= nord-region-highlight "snowstorm") "#D8DEE9" "#434C5E")))
+  (nord-uniform-mode-lines-background (if nord-uniform-mode-lines "#4C566A" "#3B4252")))
 
 ;;;; +------------+
 ;;;; + Core Faces +
@@ -217,10 +223,10 @@
     `(message-separator ((,class (:inherit shadow))))
     `(minibuffer-prompt ((,class (:foreground ,nord8 :weight bold))))
     `(mm-command-output ((,class (:foreground ,nord8))))
-    `(mode-line ((,class (:foreground ,nord4 :background ,nord2))))
+    `(mode-line ((,class (:foreground ,nord8 :background ,nord3))))
     `(mode-line-buffer-id ((,class (:weight bold))))
     `(mode-line-highlight ((,class (:inherit highlight))))
-    `(mode-line-inactive ((,class (:foreground ,nord4 :background ,nord1))))
+    `(mode-line-inactive ((,class (:foreground ,nord4 :background ,nord-uniform-mode-lines-background))))
     `(next-error ((,class (:inherit error))))
     `(nobreak-space ((,class (:foreground ,nord3))))
     `(outline-1 ((,class (:foreground ,nord8 :weight bold))))
