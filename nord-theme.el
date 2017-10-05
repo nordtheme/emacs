@@ -44,8 +44,8 @@
 
 (defgroup nord nil
   "Nord theme customizations.
-The theme has to be reloaded after changing anything in this group."
-:group 'faces)
+  The theme has to be reloaded after changing anything in this group."
+  :group 'faces)
 
 (defcustom nord-comment-brightness 0
   "Allows to define a custom comment color brightness with percentage adjustments from 0% - 20%.
@@ -53,14 +53,22 @@ The theme has to be reloaded after changing anything in this group."
   :type 'integer
   :group 'nord)
 
+(defcustom nord-region-highlight nil
+  "Allows to set a region highlight style based on the Nord components.
+  Valid styles are
+    - 'snowstorm' - Uses 'nord0' as foreground- and 'nord4' as background color
+    - 'frost' - Uses 'nord0' as foreground- and 'nord8' as background color"
+  :type 'string
+  :group 'nord)
+
 (setq nord-brightened-comments '("#4c566a" "#4e586d" "#505b70" "#525d73" "#556076" "#576279" "#59647c" "#5b677f" "#5d6982" "#5f6c85" "#616e88" "#63718b" "#66738e" "#687591" "#6a7894" "#6d7a96" "#6f7d98" "#72809a" "#75829c" "#78859e" "#7b88a1"))
 
 (defun brightened-comment-color (percent)
   "Returns the brightened comment color for the given percent.
   The value must be greater or equal to 0 and less or equal to 20, otherwise the default 'nord3' color is used."
-  (if (and (integerp percent) 
-          (>= percent 0) 
-          (<= percent 20)) 
+  (if (and (integerp percent)
+          (>= percent 0)
+          (<= percent 20))
     (nth percent nord-brightened-comments)
     (nth 0 nord-brightened-comments)))
 
@@ -96,7 +104,13 @@ The theme has to be reloaded after changing anything in this group."
   (nord-regexp (if (display-graphic-p) "#EBCB8B" "yellow"))
   (nord-string (if (display-graphic-p) "#A3BE8C" "green"))
   (nord-tag (if (display-graphic-p) "#81A1C1" "blue"))
-  (nord-variable (if (display-graphic-p) "#D8DEE9" "#D8DEE9")))
+  (nord-variable (if (display-graphic-p) "#D8DEE9" "#D8DEE9"))
+  (nord-region-highlight-foreground (if (or
+    (string= nord-region-highlight "frost")
+    (string= nord-region-highlight "snowstorm")) "#2E3440" nil))
+  (nord-region-highlight-background (if
+    (string= nord-region-highlight "frost") "#88C0D0"
+      (if (string= nord-region-highlight "snowstorm") "#D8DEE9" "#434C5E"))))
 
 ;;;; +------------+
 ;;;; + Core Faces +
@@ -232,7 +246,7 @@ The theme has to be reloaded after changing anything in this group."
     `(package-status-installed ((,class (:foreground ,nord7 :weight bold))))
     `(package-status-unsigned ((,class (:underline ,nord13))))
     `(query-replace ((,class (:foreground ,nord8 :background ,nord2))))
-    `(region ((,class (:background ,nord2))))
+    `(region ((,class (:foreground ,nord-region-highlight-foreground :background ,nord-region-highlight-background))))
     `(scroll-bar ((,class (:background ,nord3))))
     `(secondary-selection ((,class (:background ,nord2))))
     `(show-paren-match-face ((,class (:foreground ,nord0 :background ,nord8))))
