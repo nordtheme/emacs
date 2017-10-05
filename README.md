@@ -45,7 +45,7 @@ Make sure to install one of the currently supported terminal themes listed below
 [![Nord PuTTY](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-putty-banner.svg)](https://github.com/arcticicestudio/nord-putty)  
 [![Nord Terminal.app](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-terminal-app-banner.svg)](https://github.com/arcticicestudio/nord-terminal-app)  
 [![Nord Terminator](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-terminator-banner.svg)](https://github.com/arcticicestudio/nord-terminator)  
-[![Nord Terminix](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-terminix-banner.svg)](https://github.com/arcticicestudio/nord-terminix)  
+[![Nord Tilix](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-tilix-banner.svg)](https://github.com/arcticicestudio/nord-tilix)  
 [![Nord Termite](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-termite-banner.svg)](https://github.com/arcticicestudio/nord-termite)  
 [![Nord XFCE Terminal](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-xfce-terminal-banner.svg)](https://github.com/arcticicestudio/nord-xfce-terminal)  
 [![Nord Xresources](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-xresources-banner.svg)](https://github.com/arcticicestudio/nord-xresources)  
@@ -117,7 +117,7 @@ This customization is a port of the reference implementation from the [Nord Atom
 | 19% | `#78859e` |
 | 20% | `#7b88a1` |
 
-<align="center"><strong>Default comment brightness</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-java-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-js-default.png"/><br><strong>Increased comment brightness by 15%</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-java-15percent.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-js-15percent.png"/></p>
+<p align="center"><strong>Default comment brightness</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-java-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-js-default.png"/><br><strong>Increased comment brightness by 15%</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-java-15percent.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-custom-comment-brightness-js-15percent.png"/></p>
 
 ### Region Highlight Style
 
@@ -131,7 +131,7 @@ It can be enabled by setting the `nord-region-highlight` variable to the desired
 (setq nord-region-highlight "snowstorm")
 ```
 
-<align="center"><strong><code>snowstorm</code> region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-snowstorm.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-snowstorm.gif"/><br><strong><code>frost</code> region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-frost.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-frost.gif"/><br><strong>default region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-default.gif"/></p>
+p align="center"><strong><code>snowstorm</code> region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-snowstorm.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-snowstorm.gif"/><br><strong><code>frost</code> region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-frost.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-frost.gif"/><br><strong>default region highlight style</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-region-highlight-style-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-customization-region-highlight-style-default.gif"/></p>
 
 ### Uniform Mode Lines
 
@@ -143,7 +143,7 @@ It can be activated by setting the `nord-uniform-mode-lines` variable to `t` in 
 (setq nord-uniform-mode-lines t)
 ```
 
-<align="center"><strong>Default mode lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-uniform-mode-lines-default.png"/><br><strong>Uniform mode lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-uniform-mode-lines.png"/></p>
+<p align="center"><strong>Default mode lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-uniform-mode-lines-default.png"/><br><strong>Uniform mode lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-customization-uniform-mode-lines.png"/></p>
 
 ## Package Support
 Nord Emacs provides support for many third-party syntax- and the UI packages.  
