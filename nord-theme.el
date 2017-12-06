@@ -488,17 +488,17 @@
 
     ;; > Eshell
     `(eshell-prompt ((,class (:foreground ,nord9 :weight bold))))
-    `(eshell-ls-archive ((,class (:foreground ,nord11 :weight bold))))
+    `(eshell-ls-archive ((,class (:foreground ,nord14 :weight bold))))
     `(eshell-ls-backup ((,class (:inherit font-lock-comment-face))))
     `(eshell-ls-clutter ((,class (:inherit font-lock-comment-face))))
-    `(eshell-ls-directory ((,class (:foreground ,nord8 :weight bold))))
+    `(eshell-ls-directory ((,class (:foreground ,nord7 :weight bold))))
     `(eshell-ls-executable ((,class (:foreground ,nord11 :weight bold))))
-    `(eshell-ls-unreadable ((,class (:foreground ,nord15))))
+    `(eshell-ls-unreadable ((,class (:foreground ,nord6))))
     `(eshell-ls-missing ((,class (:inherit font-lock-warning-face))))
     `(eshell-ls-product ((,class (:inherit font-lock-doc-face))))
     `(eshell-ls-special ((,class (:foreground ,nord13 :weight bold))))
-    `(eshell-ls-symlink ((,class (:foreground ,nord7 :weight bold))))
-    `(eshell-ls-readonly ((,class (:foreground, nord14))))
+    `(eshell-ls-symlink ((,class (:foreground ,nord7))))
+    `(eshell-ls-readonly ((,class (:foreground, nord15))))
 
     ;; > Flycheck
     `(flycheck-error ((,class (:underline (:style wave :color ,nord11)))))
