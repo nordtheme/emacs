@@ -486,6 +486,20 @@
     `(evil-ex-substitute-replacement ((,class (:foreground ,nord9))))
     `(evil-ex-substitute-matches ((,class (:inherit isearch))))
 
+    ;; > Eshell
+    `(eshell-prompt ((,class (:foreground ,nord9 :weight bold))))
+    `(eshell-ls-archive ((,class (:foreground ,nord11 :weight bold))))
+    `(eshell-ls-backup ((,class (:inherit font-lock-comment-face))))
+    `(eshell-ls-clutter ((,class (:inherit font-lock-comment-face))))
+    `(eshell-ls-directory ((,class (:foreground ,nord8 :weight bold))))
+    `(eshell-ls-executable ((,class (:foreground ,nord11 :weight bold))))
+    `(eshell-ls-unreadable ((,class (:foreground ,nord15))))
+    `(eshell-ls-missing ((,class (:inherit font-lock-warning-face))))
+    `(eshell-ls-product ((,class (:inherit font-lock-doc-face))))
+    `(eshell-ls-special ((,class (:foreground ,nord13 :weight bold))))
+    `(eshell-ls-symlink ((,class (:foreground ,nord7 :weight bold))))
+    `(eshell-ls-readonly ((,class (:foreground, nord14))))
+
     ;; > Flycheck
     `(flycheck-error ((,class (:underline (:style wave :color ,nord11)))))
     `(flycheck-fringe-error ((,class (:foreground ,nord11 :weight bold))))
