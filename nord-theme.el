@@ -1,6 +1,6 @@
 ;;; nord-theme.el --- An arctic, north-bluish clean and elegant theme
 
-;; Copyright (C) 2017 by Arctic Ice Studio
+;; Copyright (c) 2017-present by Arctic Ice Studio
 
 ;; Title: Nord Theme
 ;; Project: nord-emacs
@@ -8,7 +8,7 @@
 ;; URL: https://github.com/arcticicestudio/nord-emacs
 ;; Author: Arctic Ice Studio <development@arcticicestudio.com>
 ;; Package-Requires: ((emacs "24"))
-;; License: Apache-2.0
+;; License: MIT
 
 ;;; Commentary:
 
