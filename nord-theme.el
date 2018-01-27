@@ -681,7 +681,6 @@
     `(org-habit-overdue-future-face ((,class (:background ,nord11))))
     `(org-habit-ready-face ((,class (:background ,nord14))))
     `(org-habit-ready-future-face ((,class (:background ,nord14))))
-    `(org-hide ((,class (:foreground ,nord0 :background ,nord0))))
     `(org-link ((,class (:underline t))))
     `(org-scheduled ((,class (:foreground ,nord14))))
     `(org-scheduled-previously ((,class (:foreground ,nord13))))
