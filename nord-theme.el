@@ -454,6 +454,7 @@
     `(web-mode-variable-name-face ((,class (:foreground ,nord-variable))))
 
     ;; +--- UI ---+
+
     ;; > Anzu
     `(anzu-mode-line ((,class (:foreground, nord8))))
     `(anzu-mode-line-no-match ((,class (:foreground, nord11))))
@@ -484,6 +485,19 @@
    `(diff-hl-change ((,class (:background ,nord13))))
    `(diff-hl-insert ((,class (:background ,nord14))))
    `(diff-hl-delete ((,class (:background ,nord11))))
+
+    ;; > diredp
+    `(diredp-dir-heading ((,class (:underline t :foreground ,nord9 :weight bold))))
+    `(diredp-dir-priv ((,class (:foreground ,nord10))))
+    `(diredp-exec-priv ((,class (:foreground ,nord14))))
+    `(diredp-file-name ((,class (:inherit default))))
+    `(diredp-file-suffix ((,class (:inherit default))))
+    `(diredp-inode+size ((,class (:foreground ,nord8))))
+    `(diredp-no-priv ((,class (:inherit default))))
+    `(diredp-other-priv ((,class (:foreground ,nord13))))
+    `(diredp-rare-priv ((,class (:foreground ,nord12))))
+    `(diredp-read-priv ((,class (:foreground ,nord5))))
+    `(diredp-write-priv ((,class (:foreground ,nord11))))
    
     ;; > Evil
     `(evil-ex-info ((,class (:foreground ,nord8))))
