@@ -455,6 +455,10 @@
 
     ;; +--- UI ---+
 
+    ;; > ace-jump-mode
+    `(ace-jump-face-background ((,class (:foreground ,nord4))))
+    `(ace-jump-face-foreground ((,class (:foreground ,nord15))))
+
     ;; > Anzu
     `(anzu-mode-line ((,class (:foreground, nord8))))
     `(anzu-mode-line-no-match ((,class (:foreground, nord11))))
