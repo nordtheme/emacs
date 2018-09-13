@@ -66,16 +66,16 @@
   :type 'boolean
   :group 'nord)
 
-(setq nord-brightened-comments '("#4c566a" "#4e586d" "#505b70" "#525d73" "#556076" "#576279" "#59647c" "#5b677f" "#5d6982" "#5f6c85" "#616e88" "#63718b" "#66738e" "#687591" "#6a7894" "#6d7a96" "#6f7d98" "#72809a" "#75829c" "#78859e" "#7b88a1"))
+(setq nord-theme--brightened-comments '("#4c566a" "#4e586d" "#505b70" "#525d73" "#556076" "#576279" "#59647c" "#5b677f" "#5d6982" "#5f6c85" "#616e88" "#63718b" "#66738e" "#687591" "#6a7894" "#6d7a96" "#6f7d98" "#72809a" "#75829c" "#78859e" "#7b88a1"))
 
-(defun brightened-comment-color (percent)
+(defun nord-theme--brightened-comment-color (percent)
   "Returns the brightened comment color for the given percent.
   The value must be greater or equal to 0 and less or equal to 20, otherwise the default 'nord3' color is used."
   (if (and (integerp percent)
           (>= percent 0)
           (<= percent 20))
-    (nth percent nord-brightened-comments)
-    (nth 0 nord-brightened-comments)))
+    (nth percent nord-theme--brightened-comments)
+    (nth 0 nord-theme--brightened-comments)))
 
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
@@ -98,7 +98,7 @@
   (nord-annotation (if (display-graphic-p) "#D08770" "brightyellow"))
   (nord-attribute (if (display-graphic-p) "#8FBCBB" "cyan"))
   (nord-class (if (display-graphic-p) "#8FBCBB" "cyan"))
-  (nord-comment (if (display-graphic-p) (brightened-comment-color nord-comment-brightness) "brightblack"))
+  (nord-comment (if (display-graphic-p) (nord-theme--brightened-comment-color nord-comment-brightness) "brightblack"))
   (nord-escape (if (display-graphic-p) "#D08770" "brightyellow"))
   (nord-method (if (display-graphic-p) "#88C0D0" "brightcyan"))
   (nord-keyword (if (display-graphic-p) "#81A1C1" "blue"))
