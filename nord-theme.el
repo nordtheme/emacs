@@ -610,6 +610,9 @@
     `(neo-vc-up-to-date-face ((,class (:foreground ,nord4))))
     `(neo-vc-user-face ((,class (:foreground ,nord4))))
 
+    ;; > Cider
+    `(cider-result-overlay-face ((t (:background unspecified))))
+
     ;; > Org
     `(org-level-1 ((,class (:foreground ,nord8 :weight bold))))
     `(org-level-2 ((,class (:inherit org-level-1))))
