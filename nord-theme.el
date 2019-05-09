@@ -47,11 +47,20 @@
   The theme has to be reloaded after changing anything in this group."
   :group 'faces)
 
-(defcustom nord-comment-brightness 0
+(defcustom nord-comment-brightness 10
   "Allows to define a custom comment color brightness with percentage adjustments from 0% - 20%.
-  The value must be greater or equal to 0 and less or equal to 20, otherwise the default 'nord3' color is used."
+  As of version 0.4.0, this variable is obsolete/deprecated and has no effect anymore and will be removed in version 1.0.0!
+  The comment color brightness has been increased by 10% by default.
+  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
   :type 'integer
   :group 'nord)
+
+(make-obsolete-variable
+  'nord-comment-brightness
+  "The custom color brightness feature has been deprecated and will be removed in version 1.0.0!
+  The comment color brightness has been increased by 10% by default.
+  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  "0.4.0")
 
 (defcustom nord-region-highlight nil
   "Allows to set a region highlight style based on the Nord components.
@@ -70,12 +79,18 @@
 
 (defun nord-theme--brightened-comment-color (percent)
   "Returns the brightened comment color for the given percent.
-  The value must be greater or equal to 0 and less or equal to 20, otherwise the default 'nord3' color is used."
-  (if (and (integerp percent)
-          (>= percent 0)
-          (<= percent 20))
-    (nth percent nord-theme--brightened-comments)
-    (nth 0 nord-theme--brightened-comments)))
+  The value must be greater or equal to 0 and less or equal to 20, otherwise the default 'nord3' color is used.
+  As of version 0.4.0, this function is obsolete/deprecated and has no effect anymore and will be removed in version 1.0.0!
+  The comment color brightness has been increased by 10% by default.
+  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  (nth 10 nord-theme--brightened-comments))
+
+(make-obsolete
+  'nord-theme--brightened-comment-color
+  "The custom color brightness feature has been deprecated and will be removed in version 1.0.0!\
+  The comment color brightness has been increased by 10% by default.\
+  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  "0.4.0")
 
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
