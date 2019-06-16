@@ -1,13 +1,15 @@
 ;;; nord-theme.el --- An arctic, north-bluish clean and elegant theme
 
-;; Copyright (C) 2017 by Arctic Ice Studio
+;; Copyright (C) 2016-present Arctic Ice Studio <development@arcticicestudio.com> (https://www.arcticicestudio.com)
+;; Copyright (C) 2016-present Sven Greb <development@svengreb.de> (https://www.svengreb.de)
 
 ;; Title: Nord Theme
 ;; Project: nord-emacs
-;; Version: 0.3.0
+;; Version: 0.4.0
 ;; URL: https://github.com/arcticicestudio/nord-emacs
 ;; Author: Arctic Ice Studio <development@arcticicestudio.com>
 ;; Package-Requires: ((emacs "24"))
+;; License: MIT
 
 ;;; Commentary:
 
@@ -41,6 +43,56 @@
 
 (deftheme nord "An arctic, north-bluish clean and elegant theme")
 
+(defgroup nord nil
+  "Nord theme customizations.
+  The theme has to be reloaded after changing anything in this group."
+  :group 'faces)
+
+(defcustom nord-comment-brightness 10
+  "Allows to define a custom comment color brightness with percentage adjustments from 0% - 20%.
+  As of version 0.4.0, this variable is obsolete/deprecated and has no effect anymore and will be removed in version 1.0.0!
+  The comment color brightness has been increased by 10% by default.
+  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  :type 'integer
+  :group 'nord)
+
+(make-obsolete-variable
+  'nord-comment-brightness
+  "The custom color brightness feature has been deprecated and will be removed in version 1.0.0!
+  The comment color brightness has been increased by 10% by default.
+  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  "0.4.0")
+
+(defcustom nord-region-highlight nil
+  "Allows to set a region highlight style based on the Nord components.
+  Valid styles are
+    - 'snowstorm' - Uses 'nord0' as foreground- and 'nord4' as background color
+    - 'frost' - Uses 'nord0' as foreground- and 'nord8' as background color"
+  :type 'string
+  :group 'nord)
+
+(defcustom nord-uniform-mode-lines nil
+  "Enables uniform activate- and inactive mode lines using 'nord3' as background."
+  :type 'boolean
+  :group 'nord)
+
+(setq nord-theme--brightened-comments '("#4c566a" "#4e586d" "#505b70" "#525d73" "#556076" "#576279" "#59647c" "#5b677f" "#5d6982" "#5f6c85" "#616e88" "#63718b" "#66738e" "#687591" "#6a7894" "#6d7a96" "#6f7d98" "#72809a" "#75829c" "#78859e" "#7b88a1"))
+
+(defun nord-theme--brightened-comment-color (percent)
+  "Returns the brightened comment color for the given percent.
+  The value must be greater or equal to 0 and less or equal to 20, otherwise the default 'nord3' color is used.
+  As of version 0.4.0, this function is obsolete/deprecated and has no effect anymore and will be removed in version 1.0.0!
+  The comment color brightness has been increased by 10% by default.
+  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  (nth 10 nord-theme--brightened-comments))
+
+(make-obsolete
+  'nord-theme--brightened-comment-color
+  "The custom color brightness feature has been deprecated and will be removed in version 1.0.0!\
+  The comment color brightness has been increased by 10% by default.\
+  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  "0.4.0")
+
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
   (nord0 (if (display-graphic-p) "#2E3440" nil))
@@ -62,7 +114,7 @@
   (nord-annotation (if (display-graphic-p) "#D08770" "brightyellow"))
   (nord-attribute (if (display-graphic-p) "#8FBCBB" "cyan"))
   (nord-class (if (display-graphic-p) "#8FBCBB" "cyan"))
-  (nord-comment (if (display-graphic-p) "#4C566A" "brightblack"))
+  (nord-comment (if (display-graphic-p) (nord-theme--brightened-comment-color nord-comment-brightness) "brightblack"))
   (nord-escape (if (display-graphic-p) "#D08770" "brightyellow"))
   (nord-method (if (display-graphic-p) "#88C0D0" "brightcyan"))
   (nord-keyword (if (display-graphic-p) "#81A1C1" "blue"))
@@ -73,7 +125,14 @@
   (nord-regexp (if (display-graphic-p) "#EBCB8B" "yellow"))
   (nord-string (if (display-graphic-p) "#A3BE8C" "green"))
   (nord-tag (if (display-graphic-p) "#81A1C1" "blue"))
-  (nord-variable (if (display-graphic-p) "#D8DEE9" "#D8DEE9")))
+  (nord-variable (if (display-graphic-p) "#D8DEE9" "#D8DEE9"))
+  (nord-region-highlight-foreground (if (or
+    (string= nord-region-highlight "frost")
+    (string= nord-region-highlight "snowstorm")) "#2E3440" nil))
+  (nord-region-highlight-background (if
+    (string= nord-region-highlight "frost") "#88C0D0"
+      (if (string= nord-region-highlight "snowstorm") "#D8DEE9" "#434C5E")))
+  (nord-uniform-mode-lines-background (if nord-uniform-mode-lines "#4C566A" "#3B4252")))
 
 ;;;; +------------+
 ;;;; + Core Faces +
@@ -87,10 +146,10 @@
     `(error ((,class (:foreground ,nord11 :weight bold))))
     `(escape-glyph ((,class (:foreground ,nord12))))
     `(font-lock-builtin-face ((,class (:foreground ,nord9))))
-    `(font-lock-comment-face ((,class (:foreground ,nord3))))
-    `(font-lock-comment-delimiter-face ((,class (:foreground ,nord3))))
+    `(font-lock-comment-face ((,class (:foreground ,nord-comment))))
+    `(font-lock-comment-delimiter-face ((,class (:foreground ,nord-comment))))
     `(font-lock-constant-face ((,class (:foreground ,nord9))))
-    `(font-lock-doc-face ((,class (:foreground ,nord3))))
+    `(font-lock-doc-face ((,class (:foreground ,nord-comment))))
     `(font-lock-function-name-face ((,class (:foreground ,nord8))))
     `(font-lock-keyword-face ((,class (:foreground ,nord9))))
     `(font-lock-negation-char-face ((,class (:foreground ,nord9))))
@@ -141,7 +200,7 @@
     `(custom-button-pressed-unraised ((,class (:background ,nord4 :foreground ,nord0 :box (:line-width 2 :color ,nord4 :style sunken-button)))))
     `(custom-button-unraised ((,class (:background ,nord0 :foreground ,nord8 :box (:line-width 2 :color ,nord4 :style sunken-button)))))
     `(custom-changed ((,class (:foreground ,nord13))))
-    `(custom-comment ((,class (:foreground ,nord3))))
+    `(custom-comment ((,class (:foreground ,nord-comment))))
     `(custom-comment-tag ((,class (:foreground ,nord7))))
     `(custom-documentation ((,class (:foreground ,nord4))))
     `(custom-group-tag ((,class (:foreground ,nord8 :weight bold))))
@@ -180,10 +239,10 @@
     `(message-separator ((,class (:inherit shadow))))
     `(minibuffer-prompt ((,class (:foreground ,nord8 :weight bold))))
     `(mm-command-output ((,class (:foreground ,nord8))))
-    `(mode-line ((,class (:foreground ,nord4 :background ,nord2))))
+    `(mode-line ((,class (:foreground ,nord8 :background ,nord3))))
     `(mode-line-buffer-id ((,class (:weight bold))))
     `(mode-line-highlight ((,class (:inherit highlight))))
-    `(mode-line-inactive ((,class (:foreground ,nord4 :background ,nord1))))
+    `(mode-line-inactive ((,class (:foreground ,nord4 :background ,nord-uniform-mode-lines-background))))
     `(next-error ((,class (:inherit error))))
     `(nobreak-space ((,class (:foreground ,nord3))))
     `(outline-1 ((,class (:foreground ,nord8 :weight bold))))
@@ -209,7 +268,7 @@
     `(package-status-installed ((,class (:foreground ,nord7 :weight bold))))
     `(package-status-unsigned ((,class (:underline ,nord13))))
     `(query-replace ((,class (:foreground ,nord8 :background ,nord2))))
-    `(region ((,class (:background ,nord2))))
+    `(region ((,class (:foreground ,nord-region-highlight-foreground :background ,nord-region-highlight-background))))
     `(scroll-bar ((,class (:background ,nord3))))
     `(secondary-selection ((,class (:background ,nord2))))
     `(show-paren-match-face ((,class (:foreground ,nord0 :background ,nord8))))
@@ -322,7 +381,7 @@
     `(js2-jsdoc-html-tag-name ((,class (:foreground ,nord9))))
     `(js2-external-variable ((,class (:foreground ,nord4))))
     `(js2-function-param ((,class (:foreground ,nord4))))
-    `(js2-jsdoc-value ((,class (:foreground ,nord3))))
+    `(js2-jsdoc-value ((,class (:foreground ,nord-comment))))
     `(js2-jsdoc-tag ((,class (:foreground ,nord7))))
     `(js2-jsdoc-type ((,class (:foreground ,nord7))))
     `(js2-private-member ((,class (:foreground ,nord4))))
@@ -347,7 +406,7 @@
     `(js3-warning-face ((,class (:foreground ,nord13))))
 
     ;; > Markdown
-    `(markdown-blockquote-face ((,class (:foreground ,nord3))))
+    `(markdown-blockquote-face ((,class (:foreground ,nord-comment))))
     `(markdown-bold-face ((,class (:inherit bold))))
     `(markdown-header-face-1 ((,class (:foreground ,nord8))))
     `(markdown-header-face-2 ((,class (:foreground ,nord8))))
