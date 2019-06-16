@@ -1,8 +1,8 @@
-<p align="center"><img src="https://cdn.rawgit.com/arcticicestudio/nord-emacs/develop/assets/nord-emacs-banner.svg"/></p>
+<p align="center"><a href="https://www.nordtheme.com/ports/emacs" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/emacs/repository-hero.svg?sanitize=true"/></a></p>
 
-<p align="center"><img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> <a href="https://github.com/arcticicestudio/nord-emacs/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-emacs.svg?style=flat-square"/></a> <a href="https://github.com/arcticicestudio/nord/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/Nord-v0.2.0-88C0D0.svg?style=flat-square"/></a> <img src="https://www.gnu.org/software/emacs/images/emacs.png" width=24 height=24/> <a href="https://www.gnu.org/software/emacs/#Releases"><img src="https://img.shields.io/badge/Emacs-24+-B48EAD.svg?style=flat-square"/></a> <img src="https://melpa.org/favicon.ico" width=24 height=24/> <a href="https://stable.melpa.org/#/nord-theme"><img src="https://stable.melpa.org/packages/nord-theme-badge.svg"/></a> <a href="https://melpa.org/#/nord-theme"><img src="https://melpa.org/packages/nord-theme-badge.svg"/></a></p>
+<p align="center"><a href="https://github.com/arcticicestudio/nord-emacs/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-emacs.svg?style=flat-square&label=Release&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/></a> <a href="https://www.nordtheme.com/docs/ports/emacs"><img src="https://img.shields.io/github/release/arcticicestudio/nord-emacs.svg?style=flat-square&label=Docs&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI%2BCiAgICA8cGF0aCBmaWxsPSIjZDhkZWU5IiBkPSJNMTMuNzQ2IDIuODEzYS42Ny42NyAwIDAgMC0uNTU5LS4xMzNMOCAzLjg0OGwtNS4xODgtMS4xOGEuNjY5LjY2OSAwIDAgMC0uNTcuMTMzLjY3Ny42NzcgMCAwIDAtLjI0Mi41MzF2OC4xMzNjLS4wMDguMzIuMjEuNTk4LjUyLjY2OGw1LjMzMiAxLjE5OWguMjk2bDUuMzMyLTEuMmEuNjY4LjY2OCAwIDAgMCAuNTItLjY2N1YzLjMzMmEuNjU5LjY1OSAwIDAgMC0uMjU0LS41MnpNMy4zMzIgNC4xNjhsNCAuODk4djYuNzY2bC00LS44OTh6bTkuMzM2IDYuNzY2bC00IC44OThWNS4wNjZsNC0uODk4em0wIDAiLz4KPC9zdmc%2BCg%3D%3D"/></a></p>
 
----
+<!--lint disable no-duplicate-headings-->
 
 # 0.3.0
 *2017-05-07*
@@ -107,3 +107,17 @@ Detailed information about [features](https://github.com/arcticicestudio/nord-em
 # 0.0.0
 *2017-03-25*
 **Project Initialization**
+
+<!--
++------------------+
++ Symbol Reference +
++------------------+
+↠ (U+21A0): Start of a log section description
+— (U+2014): Separator between a log section title and the metadata
+⇄ (U+21C4): Separator between a issue ID and pull request ID in a log metadata
+⊶ (U+22B6): Icon prefix for the short commit SHA checksum in a log metadata
+-->
+
+<!--lint disable final-definition-->
+
+<!-- Base Links -->
