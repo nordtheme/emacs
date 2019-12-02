@@ -627,7 +627,6 @@
     `(neo-vc-user-face ((,class (:foreground ,nord4))))
 
     ;; > Org
-    `(org-level-1 ((,class (:foreground ,nord8 :weight bold))))
     `(org-level-1 ((,class (:foreground ,nord7 :weight extra-bold))))
     `(org-level-2 ((,class (:foreground ,nord8 :weight bold))))
     `(org-level-3 ((,class (:foreground ,nord9 :weight semi-bold))))
