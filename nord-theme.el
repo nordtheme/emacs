@@ -634,7 +634,7 @@
     `(org-level-5 ((,class (:inherit org-level-4))))
     `(org-level-6 ((,class (:inherit org-level-4))))
     `(org-level-7 ((,class (:inherit org-level-4))))
-    `(org-level-8 ((,class (:inherit org-level-4)))))
+    `(org-level-8 ((,class (:inherit org-level-4))))
     `(org-agenda-structure ((,class (:foreground ,nord9))))
     `(org-agenda-date ((,class (:foreground ,nord8 :underline nil))))
     `(org-agenda-done ((,class (:foreground ,nord14))))
