@@ -681,7 +681,15 @@
     `(org-agenda-date-weekend ((,class (:foreground ,nord9))))
     `(org-agenda-date-today ((,class (:foreground ,nord8 :weight bold))))
     `(org-agenda-done ((,class (:foreground ,nord14))))
-    `(org-verbatim ((,class (:foreground ,nord7))))))
+    `(org-verbatim ((,class (:foreground ,nord7))))
+
+    ;; > ivy-mode
+    `(ivy-current-match ((,class (:inherit region))))
+    `(ivy-minibuffer-match-face-1 ((,class (:inherit bold))))
+    `(ivy-minibuffer-match-face-2 ((,class (:foreground ,nord7 :underline t))))
+    `(ivy-minibuffer-match-face-3 ((,class (:foreground ,nord8 :underline t))))
+    `(ivy-minibuffer-match-face-4 ((,class (:foreground ,nord9 :underline t))))
+    `(ivy-remote ((,class (:foreground ,nord15))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
