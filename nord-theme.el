@@ -685,11 +685,11 @@
 
     ;; > ivy-mode
     `(ivy-current-match ((,class (:inherit region))))
-    `(ivy-minibuffer-match-face-1 ((,class (:inherit bold))))
-    `(ivy-minibuffer-match-face-2 ((,class (:foreground ,nord7 :underline t))))
-    `(ivy-minibuffer-match-face-3 ((,class (:foreground ,nord8 :underline t))))
-    `(ivy-minibuffer-match-face-4 ((,class (:foreground ,nord9 :underline t))))
-    `(ivy-remote ((,class (:foreground ,nord15))))))
+    `(ivy-minibuffer-match-face-1 ((,class (:inherit default))))
+    `(ivy-minibuffer-match-face-2 ((,class (:background ,nord7 :foreground ,nord0))))
+    `(ivy-minibuffer-match-face-3 ((,class (:background ,nord8 :foreground ,nord0))))
+    `(ivy-minibuffer-match-face-4 ((,class (:background ,nord9 :foreground ,nord0))))
+    `(ivy-remote ((,class (:foreground ,nord14))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
