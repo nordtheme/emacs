@@ -5,7 +5,7 @@
 
 ;; Title: Nord Theme
 ;; Project: nord-emacs
-;; Version: 0.4.0
+;; Version: 0.5.0
 ;; URL: https://github.com/arcticicestudio/nord-emacs
 ;; Author: Arctic Ice Studio <development@arcticicestudio.com>
 ;; Package-Requires: ((emacs "24"))
@@ -93,39 +93,43 @@
   Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
   "0.4.0")
 
+(defun nord-display-truecolor-or-graphic-p ()
+  "Returns whether the display can display nord colors"
+  (or (= (display-color-cells) 16777216) (display-graphic-p)))
+
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
-  (nord0 (if (display-graphic-p) "#2E3440" nil))
-  (nord1 (if (display-graphic-p) "#3B4252" "black"))
-  (nord2 (if (display-graphic-p) "#434C5E" "#434C5E"))
-  (nord3 (if (display-graphic-p) "#4C566A" "brightblack"))
-  (nord4 (if (display-graphic-p) "#D8DEE9" "#D8DEE9"))
-  (nord5 (if (display-graphic-p) "#E5E9F0" "white"))
-  (nord6 (if (display-graphic-p) "#ECEFF4" "brightwhite"))
-  (nord7 (if (display-graphic-p) "#8FBCBB" "cyan"))
-  (nord8 (if (display-graphic-p) "#88C0D0" "brightcyan"))
-  (nord9 (if (display-graphic-p) "#81A1C1" "blue"))
-  (nord10 (if (display-graphic-p) "#5E81AC" "brightblue"))
-  (nord11 (if (display-graphic-p) "#BF616A" "red"))
-  (nord12 (if (display-graphic-p) "#D08770" "brightyellow"))
-  (nord13 (if (display-graphic-p) "#EBCB8B" "yellow"))
-  (nord14 (if (display-graphic-p) "#A3BE8C" "green"))
-  (nord15 (if (display-graphic-p) "#B48EAD" "magenta"))
-  (nord-annotation (if (display-graphic-p) "#D08770" "brightyellow"))
-  (nord-attribute (if (display-graphic-p) "#8FBCBB" "cyan"))
-  (nord-class (if (display-graphic-p) "#8FBCBB" "cyan"))
-  (nord-comment (if (display-graphic-p) (nord-theme--brightened-comment-color nord-comment-brightness) "brightblack"))
-  (nord-escape (if (display-graphic-p) "#D08770" "brightyellow"))
-  (nord-method (if (display-graphic-p) "#88C0D0" "brightcyan"))
-  (nord-keyword (if (display-graphic-p) "#81A1C1" "blue"))
-  (nord-numeric (if (display-graphic-p) "#B48EAD" "magenta"))
-  (nord-operator (if (display-graphic-p) "#81A1C1" "blue"))
-  (nord-preprocessor (if (display-graphic-p) "#5E81AC" "brightblue"))
-  (nord-punctuation (if (display-graphic-p) "#D8DEE9" "#D8DEE9"))
-  (nord-regexp (if (display-graphic-p) "#EBCB8B" "yellow"))
-  (nord-string (if (display-graphic-p) "#A3BE8C" "green"))
-  (nord-tag (if (display-graphic-p) "#81A1C1" "blue"))
-  (nord-variable (if (display-graphic-p) "#D8DEE9" "#D8DEE9"))
+  (nord0 (if (nord-display-truecolor-or-graphic-p) "#2E3440" nil))
+  (nord1 (if (nord-display-truecolor-or-graphic-p) "#3B4252" "black"))
+  (nord2 (if (nord-display-truecolor-or-graphic-p) "#434C5E" "#434C5E"))
+  (nord3 (if (nord-display-truecolor-or-graphic-p) "#4C566A" "brightblack"))
+  (nord4 (if (nord-display-truecolor-or-graphic-p) "#D8DEE9" "#D8DEE9"))
+  (nord5 (if (nord-display-truecolor-or-graphic-p) "#E5E9F0" "white"))
+  (nord6 (if (nord-display-truecolor-or-graphic-p) "#ECEFF4" "brightwhite"))
+  (nord7 (if (nord-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
+  (nord8 (if (nord-display-truecolor-or-graphic-p) "#88C0D0" "brightcyan"))
+  (nord9 (if (nord-display-truecolor-or-graphic-p) "#81A1C1" "blue"))
+  (nord10 (if (nord-display-truecolor-or-graphic-p) "#5E81AC" "brightblue"))
+  (nord11 (if (nord-display-truecolor-or-graphic-p) "#BF616A" "red"))
+  (nord12 (if (nord-display-truecolor-or-graphic-p) "#D08770" "brightyellow"))
+  (nord13 (if (nord-display-truecolor-or-graphic-p) "#EBCB8B" "yellow"))
+  (nord14 (if (nord-display-truecolor-or-graphic-p) "#A3BE8C" "green"))
+  (nord15 (if (nord-display-truecolor-or-graphic-p) "#B48EAD" "magenta"))
+  (nord-annotation (if (nord-display-truecolor-or-graphic-p) "#D08770" "brightyellow"))
+  (nord-attribute (if (nord-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
+  (nord-class (if (nord-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
+  (nord-comment (if (nord-display-truecolor-or-graphic-p) (nord-theme--brightened-comment-color nord-comment-brightness) "brightblack"))
+  (nord-escape (if (nord-display-truecolor-or-graphic-p) "#D08770" "brightyellow"))
+  (nord-method (if (nord-display-truecolor-or-graphic-p) "#88C0D0" "brightcyan"))
+  (nord-keyword (if (nord-display-truecolor-or-graphic-p) "#81A1C1" "blue"))
+  (nord-numeric (if (nord-display-truecolor-or-graphic-p) "#B48EAD" "magenta"))
+  (nord-operator (if (nord-display-truecolor-or-graphic-p) "#81A1C1" "blue"))
+  (nord-preprocessor (if (nord-display-truecolor-or-graphic-p) "#5E81AC" "brightblue"))
+  (nord-punctuation (if (nord-display-truecolor-or-graphic-p) "#D8DEE9" "#D8DEE9"))
+  (nord-regexp (if (nord-display-truecolor-or-graphic-p) "#EBCB8B" "yellow"))
+  (nord-string (if (nord-display-truecolor-or-graphic-p) "#A3BE8C" "green"))
+  (nord-tag (if (nord-display-truecolor-or-graphic-p) "#81A1C1" "blue"))
+  (nord-variable (if (nord-display-truecolor-or-graphic-p) "#D8DEE9" "#D8DEE9"))
   (nord-region-highlight-foreground (if (or
     (string= nord-region-highlight "frost")
     (string= nord-region-highlight "snowstorm")) "#2E3440" nil))
@@ -271,8 +275,17 @@
     `(region ((,class (:foreground ,nord-region-highlight-foreground :background ,nord-region-highlight-background))))
     `(scroll-bar ((,class (:background ,nord3))))
     `(secondary-selection ((,class (:background ,nord2))))
+
+    ;; `show-paren-match-face` and `show-paren-mismatch-face` are deprecated since Emacs version 22.1 and were
+    ;; removed in Emacs 25.
+    ;; https://github.com/arcticicestudio/nord-emacs/issues/75
+    ;; http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=c430f7e23fc2c22f251ace4254e37dea1452dfc3
+    ;; https://github.com/emacs-mirror/emacs/commit/c430f7e23fc2c22f251ace4254e37dea1452dfc3
     `(show-paren-match-face ((,class (:foreground ,nord0 :background ,nord8))))
     `(show-paren-mismatch-face ((,class (:background ,nord11))))
+
+    `(show-paren-match ((,class (:foreground ,nord0 :background ,nord8))))
+    `(show-paren-mismatch ((,class (:background ,nord11))))
     `(success ((,class (:foreground ,nord14))))
     `(term ((,class (:foreground ,nord4 :background ,nord0))))
     `(term-color-black ((,class (:foreground ,nord1 :background ,nord1))))
@@ -626,15 +639,18 @@
     `(neo-vc-up-to-date-face ((,class (:foreground ,nord4))))
     `(neo-vc-user-face ((,class (:foreground ,nord4))))
 
+    ;; > Cider
+    `(cider-result-overlay-face ((t (:background unspecified))))
+
     ;; > Org
-    `(org-level-1 ((,class (:foreground ,nord8 :weight bold))))
-    `(org-level-2 ((,class (:inherit org-level-1))))
-    `(org-level-3 ((,class (:inherit org-level-1))))
-    `(org-level-4 ((,class (:inherit org-level-1))))
-    `(org-level-5 ((,class (:inherit org-level-1))))
-    `(org-level-6 ((,class (:inherit org-level-1))))
-    `(org-level-7 ((,class (:inherit org-level-1))))
-    `(org-level-8 ((,class (:inherit org-level-1))))
+    `(org-level-1 ((,class (:foreground ,nord7 :weight extra-bold))))
+    `(org-level-2 ((,class (:foreground ,nord8 :weight bold))))
+    `(org-level-3 ((,class (:foreground ,nord9 :weight semi-bold))))
+    `(org-level-4 ((,class (:foreground ,nord10 :weight normal))))
+    `(org-level-5 ((,class (:inherit org-level-4))))
+    `(org-level-6 ((,class (:inherit org-level-4))))
+    `(org-level-7 ((,class (:inherit org-level-4))))
+    `(org-level-8 ((,class (:inherit org-level-4))))
     `(org-agenda-structure ((,class (:foreground ,nord9))))
     `(org-agenda-date ((,class (:foreground ,nord8 :underline nil))))
     `(org-agenda-done ((,class (:foreground ,nord14))))
@@ -681,7 +697,15 @@
     `(org-agenda-date-weekend ((,class (:foreground ,nord9))))
     `(org-agenda-date-today ((,class (:foreground ,nord8 :weight bold))))
     `(org-agenda-done ((,class (:foreground ,nord14))))
-    `(org-verbatim ((,class (:foreground ,nord7))))))
+    `(org-verbatim ((,class (:foreground ,nord7))))
+
+    ;; > ivy-mode
+    `(ivy-current-match ((,class (:inherit region))))
+    `(ivy-minibuffer-match-face-1 ((,class (:inherit default))))
+    `(ivy-minibuffer-match-face-2 ((,class (:background ,nord7 :foreground ,nord0))))
+    `(ivy-minibuffer-match-face-3 ((,class (:background ,nord8 :foreground ,nord0))))
+    `(ivy-minibuffer-match-face-4 ((,class (:background ,nord9 :foreground ,nord0))))
+    `(ivy-remote ((,class (:foreground ,nord14))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
