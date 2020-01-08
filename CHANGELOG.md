@@ -4,6 +4,57 @@
 
 <!--lint disable no-duplicate-headings-->
 
+# 0.5.0
+
+![Release Date: 2020-01-08](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2020-01-08&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.5.0&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/11) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.5.0&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/7)
+
+## Feature
+
+**Support for _ivy-mode_** — #85 ⇄ #87 (⊶ d59f37c9) by [@jdek][gh-user-jdek]
+↠ Added support for the [_ivy-mode_][abo-abo/swiper] of the [ivy][melpa-ivy] package.
+It makes use of background to foreground color shading as main accent to highlight matches.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/71962257-5de30c00-31f9-11ea-8c7b-521000e21322.png" /></p>
+
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/71822147-6cfc7980-3094-11ea-9c7c-b3bc7f268a6d.png" /></p>
+
+**Migrate deprecated `show-paren-X-face` faces** — #75 ⇄ #89 (⊶ a2b90386) by [@janusvm][gh-user-janusvm]
+↠ The `show-paren-match-face` and `show-paren-mismatch-face` face are [deprecated since Emacs version 22.1][emacs-git-c-c430f7e2] and were [removed in Emacs 25][emacs-gh-c-c430f7e2].
+To provide compatibility to later Emacs version, the new `show-paren-match` and `show-paren-mismatch` faces have been added.
+
+The deprecated faces will be removed later on, but for now its totally fine for both faces to co-exist to support Emacs versions <22.1 as well as >=22.1.
+
+**Support _Cider_ evaluation result in terminal** — #70 ⇄ #71 (⊶ 995d8421) by [@fmnoise][gh-user-fmnoise]
+↠ Added support for evaluation result highlighting of the [Cider][clojure-emacs/cider] package. When running in Emacs GUI mode through iTerm2 on macOS, the background and font color in the evaluation result overlay were the same (or very similar) color so it became unreadable.
+Probably that's because of the [defined `cider-result-overlay-face` face][clojure-emacs/cider@f6ac1594#l35] and a difference in the rendering engine of iTerm2.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/71961954-c2519b80-31f8-11ea-944a-7584503790aa.png" /></p>
+
+To prevent this problem, the background color has been removed by using the `unspecified` keyword for the `:background` attribute.
+
+## Improvements
+
+**Different colors for _Org-Mode_ headings** — #81 (⊶ e095a86a) by [@C0DK][gh-user-c0dk]
+↠ The different [Org-Mode][org-mode-docs-headings] headings are now using the whole Nord's [Frost][nord-docs-colors#frost] color palette instead of only using `nord8`.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/71960310-f62ac200-31f4-11ea-857c-a8a0051d99a1.png" /></p>
+
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/71960309-f62ac200-31f4-11ea-98f5-a7d4d4b0db86.png" /></p>
+
+**Use `display-color-cells` to enable 24-bit color terminal support** — #59 ⇄ #64, #88 (⊶ a66c1202) by [@visigoth][gh-user-visigoth]
+↠ In order to fix the „unable to load color X” errors when running Emacs in daemon-mode, the defined theme colors are now tested against the [`display-color-cells` „display feature testing“ function][emacs-docs-display_feature_test] to support 24-bit color terminals with a fallback to the `display-graphic-p` function.
+This is a first step to fix the problems described and tracked in #59.
+
+## Bug Fixes
+
+**Superfluous brace character introduced in #81** — #82 (⊶ 2fc8fe41) by [@rien333][gh-user-rien333]
+↠ Removed a superfluous brace character (introduced in #81) that caused the theme fail to load.
+
 # 0.4.0
 
 ![Release Date: 2019-06-16](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2016-06-16&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.4.0&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/8) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.4.0&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/6)
@@ -257,8 +308,11 @@ _2017-03-25_
 
 [gh-nord]: https://github.com/arcticicestudio/nord
 [nord-docs-colors#frost]: https://www.nordtheme.com/docs/colors-and-palettes#frost
+[nord-docs-colors#frost]: https://www.nordtheme.com/docs/colors-and-palettes#frost
 [nord-docs-colors#snowstorm]: https://www.nordtheme.com/docs/colors-and-palettes#snow-storm
 [nord]: https://www.nordtheme.com
+[org-mode-docs-headings]: https://orgmode.org/guide/Headings-and-sections.html
+[org-mode]: https://orgmode.org
 
 <!--v 0.4.0 -->
 
@@ -270,3 +324,19 @@ _2017-03-25_
 [gh-user-gguimaraesbr]: https://github.com/gguimaraesbr
 [gh-user-localredhead]: https://github.com/localredhead
 [gh-user-slippycheeze]: https://github.com/slippycheeze
+
+<!--v 0.5.0 -->
+
+[abo-abo/swiper]: https://github.com/abo-abo/swiper
+[clojure-emacs/cider]: https://github.com/clojure-emacs/cider
+[clojure-emacs/cider@f6ac1594#l35]: https://github.com/clojure-emacs/cider/blob/f6ac1594eb20b0d3b9f9b7601e3d2708346dc0bb/cider-overlays.el#L35
+[emacs-docs-display_feature_test]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Display-Feature-Testing.html
+[emacs-gh-c-c430f7e2]: https://github.com/emacs-mirror/emacs/commit/c430f7e23fc2c22f251ace4254e37dea1452dfc3
+[emacs-git-c-c430f7e2]: http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=c430f7e23fc2c22f251ace4254e37dea1452dfc3
+[gh-user-c0dk]: https://github.com/C0DK
+[gh-user-fmnoise]: https://github.com/fmnoise
+[gh-user-janusvm]: https://github.com/janusvm
+[gh-user-jdek]: https://github.com/jdek
+[gh-user-rien333]: https://github.com/rien333
+[gh-user-visigoth]: https://github.com/visigoth
+[melpa-ivy]: https://melpa.org/#/ivy
