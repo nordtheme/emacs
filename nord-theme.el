@@ -698,6 +698,15 @@
     `(org-agenda-date-today ((,class (:foreground ,nord8 :weight bold))))
     `(org-agenda-done ((,class (:foreground ,nord14))))
     `(org-verbatim ((,class (:foreground ,nord7))))
+    `(org-habit-clear-face ((,class (:background ,nord10))))
+    `(org-habit-clear-future-face ((,class (:background ,nord10))))
+    `(org-habit-ready-face ((,class (:background ,nord14))))
+    `(org-habit-ready-future-face ((,class (:background ,nord14))))
+    `(org-habit-alert-face ((,class (:background ,nord13))))
+    `(org-habit-alert-future-face ((,class (:background ,nord13))))
+    `(org-habit-overdue-face ((,class (:background ,nord11))))
+    `(org-habit-overdue-future-face ((,class (:background ,nord11))))
+
 
     ;; > ivy-mode
     `(ivy-current-match ((,class (:inherit region))))
