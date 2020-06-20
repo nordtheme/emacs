@@ -711,7 +711,7 @@
     `(ivy-remote ((,class (:foreground ,nord14))))
 
     ;; > perspective
-    `(persp-selected-face ((,class (:foreground ,nord14 :weight bold))))))
+    `(persp-selected-face ((,class (:foreground ,nord8 :weight bold))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
