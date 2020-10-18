@@ -38,10 +38,14 @@ For more setup methods see the [official installation & activation guide][nord-d
 
 Make the following changes in `~/.spacemacs`:
 
+Add `nord-theme` to your additional packages:
+
 ```lisp
 dotspacemacs-additional-packages
 '(nord-theme)
 ```
+
+Add `nord` to your themes:
 
 ```lisp
 dotspacemacs-themes
