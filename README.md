@@ -34,7 +34,7 @@ To install or update Nord Emacs
 
 For more setup methods see the [official installation & activation guide][nord-docs-home-install] as well as Emacs [official package install documentations][emacs-docs-pack_inst] for more details about the builtin package management.
 
-### Spacemacs Quick Start
+### Quick Start for [spacemacs](https://www.spacemacs.org/)
 
 Make the following changes in `~/.spacemacs`:
 
