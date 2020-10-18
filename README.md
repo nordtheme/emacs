@@ -34,6 +34,22 @@ To install or update Nord Emacs
 
 For more setup methods see the [official installation & activation guide][nord-docs-home-install] as well as Emacs [official package install documentations][emacs-docs-pack_inst] for more details about the builtin package management.
 
+### Spacemacs Quick Start
+
+Make the following changes in `~/.spacemacs`:
+
+```lisp
+dotspacemacs-additional-packages
+'(nord-theme)
+```
+
+```lisp
+dotspacemacs-themes
+'(nord)
+```
+
+Then restart Spacemacs `<SPACE>+q+R` and the nord theme will be active.
+
 #### Activation
 
 Make sure the [`~/.emacs.d/themes` directory][emacs-docs-custh] has been added to Emacs _load path_ by adding it to the list in your [init file][emacs-docs-initfile] (`.init.el`):
