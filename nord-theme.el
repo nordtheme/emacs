@@ -509,7 +509,7 @@
    `(diff-hl-change ((,class (:background ,nord13))))
    `(diff-hl-insert ((,class (:background ,nord14))))
    `(diff-hl-delete ((,class (:background ,nord11))))
-   
+
     ;; > Evil
     `(evil-ex-info ((,class (:foreground ,nord8))))
     `(evil-ex-substitute-replacement ((,class (:foreground ,nord9))))
@@ -711,7 +711,20 @@
     `(ivy-remote ((,class (:foreground ,nord14))))
 
     ;; > perspective
-    `(persp-selected-face ((,class (:foreground ,nord8 :weight bold))))))
+    `(persp-selected-face ((,class (:foreground ,nord8 :weight bold))))
+
+    ;; emacs >= 26.1 -- line-number
+    `(line-number ((,class (:inherit fringe)))) ; inherit from the fringe to create a uniform view
+    `(line-number-current-line ((,class (:inherit line-number :foreground ,nord13 :weight bold))))
+
+    ;; emacs >= 27.1  -- tab-line
+    `(tab-line ((,class (:inherit fringe :box (:line-width 3 :color ,nord0))))) ; inherit from the fringe
+    `(tab-line-tab ((,class (:inherit tab-line))))
+    `(tab-line-tab-inactive ((,class (:inherit tab-line :foreground ,nord-comment)))); make text visible
+    `(tab-line-tab-current  ((,class (:foreground ,nord6 :background ,nord3 :box (:line-width 3 :color ,nord3)))))
+    `(tab-line-highlight    ((,class (:foreground ,nord6 :background ,nord2 :box (:line-width 3 :color ,nord2)))))
+
+    ))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
