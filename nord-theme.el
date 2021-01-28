@@ -217,7 +217,7 @@
     `(custom-state ((,class (:foreground ,nord14))))
     `(custom-themed ((,class (:foreground ,nord8 :background ,nord2))))
     `(cursor ((,class (:background ,nord4))))
-    `(fringe ((,class (:foreground ,nord4 :background ,nord0))))
+    `(fringe ((,class (:foreground ,nord4 :background ,nord1))))
     `(file-name-shadow ((,class (:inherit shadow))))
     `(header-line ((,class (:foreground ,nord4 :background ,nord2))))
     `(help-argument-name ((,class (:foreground ,nord8))))
@@ -718,11 +718,11 @@
     `(line-number-current-line ((,class (:inherit line-number :foreground ,nord13 :weight bold))))
 
     ;; emacs >= 27.1  -- tab-line
-    `(tab-line ((,class (:inherit fringe :box (:line-width 3 :color ,nord0))))) ; inherit from the fringe
+    `(tab-line ((,class (:background ,nord1 :box (:line-width 3 :color ,nord1))))) ; inherit from the fringe
     `(tab-line-tab ((,class (:inherit tab-line))))
     `(tab-line-tab-inactive ((,class (:inherit tab-line :foreground ,nord-comment)))); make text visible
     `(tab-line-tab-current  ((,class (:foreground ,nord6 :background ,nord3 :box (:line-width 3 :color ,nord3)))))
-    `(tab-line-highlight    ((,class (:foreground ,nord6 :background ,nord2 :box (:line-width 3 :color ,nord2)))))
+    `(tab-line-highlight    ((,class (:foreground ,nord6 :background ,nord2 :weight bold :box (:line-width 3 :color ,nord2)))))
 
     ))
 
