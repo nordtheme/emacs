@@ -245,7 +245,7 @@
     `(mm-command-output ((,class (:foreground ,nord8))))
     `(mode-line ((,class (:foreground ,nord8 :background ,nord3))))
     `(mode-line-buffer-id ((,class (:foreground ,nord8 :weight bold))))
-    `(mode-line-highlight ((,class (:inherit highlight))))
+    `(mode-line-highlight ((,class (:foreground ,nord13 :weight bold))))
     `(mode-line-inactive ((,class (:foreground ,nord4 :background ,nord-uniform-mode-lines-background))))
     `(next-error ((,class (:inherit error))))
     `(nobreak-space ((,class (:foreground ,nord3))))
