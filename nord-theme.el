@@ -38,7 +38,7 @@
 ;;; Code:
 
 (unless (>= emacs-major-version 24)
-  (error "Nord theme requires Emacs 24 or later!"))
+  (error "The Nord theme requires Emacs 24 or later!"))
 
 (deftheme nord "An arctic, north-bluish clean and elegant theme")
 
@@ -48,7 +48,7 @@
   :group 'faces)
 
 (defcustom nord-comment-brightness 10
-  "Allows to define a custom comment color brightness with percentage adjustments from 0% - 20%.
+  "Allows you to define a custom comment color brightness with percentage adjustments from 0% - 20%.
   As of version 0.4.0, this variable is obsolete/deprecated and has no effect anymore and will be removed in version 1.0.0!
   The comment color brightness has been increased by 10% by default.
   Please see https://github.com/nordtheme/emacs/issues/73 for more details."
