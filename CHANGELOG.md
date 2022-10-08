@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.nordtheme.com/ports/emacs" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/emacs/repository-hero.svg?sanitize=true"/></a></p>
+<p align="center"><a href="https://www.nordtheme.com/ports/emacs" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true"/></a></p>
 
 <p align="center"><a href="https://github.com/arcticicestudio/nord-emacs/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-emacs.svg?style=flat-square&label=Release&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/></a> <a href="https://www.nordtheme.com/docs/ports/emacs"><img src="https://img.shields.io/github/release/arcticicestudio/nord-emacs.svg?style=flat-square&label=Docs&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI%2BCiAgICA8cGF0aCBmaWxsPSIjZDhkZWU5IiBkPSJNMTMuNzQ2IDIuODEzYS42Ny42NyAwIDAgMC0uNTU5LS4xMzNMOCAzLjg0OGwtNS4xODgtMS4xOGEuNjY5LjY2OSAwIDAgMC0uNTcuMTMzLjY3Ny42NzcgMCAwIDAtLjI0Mi41MzF2OC4xMzNjLS4wMDguMzIuMjEuNTk4LjUyLjY2OGw1LjMzMiAxLjE5OWguMjk2bDUuMzMyLTEuMmEuNjY4LjY2OCAwIDAgMCAuNTItLjY2N1YzLjMzMmEuNjU5LjY1OSAwIDAgMC0uMjU0LS41MnpNMy4zMzIgNC4xNjhsNCAuODk4djYuNzY2bC00LS44OTh6bTkuMzM2IDYuNzY2bC00IC44OThWNS4wNjZsNC0uODk4em0wIDAiLz4KPC9zdmc%2BCg%3D%3D"/></a></p>
 
@@ -86,10 +86,10 @@ By default, only the mode line of the active buffer uses `nord3` as background c
 ```
 
 <p align="center"><strong>Default mode lines</strong></p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/content/docs/ports/emacs/configuration/uniform-mode-lines-disabled.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/content/docs/ports/emacs/configuration/uniform-mode-lines-disabled.png"/></p>
 
 <p align="center"><strong>Uniform mode lines</strong></p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/content/docs/ports/emacs/configuration/uniform-mode-lines-enabled.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/content/docs/ports/emacs/configuration/uniform-mode-lines-enabled.png"/></p>
 
 **Custom Region Highlight Styles** — #45, #32 ⇄ #46 (⊶ b43a2491)
 ↠ By default, Nord Emacs uses `nord2` as background color for selected text in the editor to provide a sane default style.
@@ -104,10 +104,10 @@ To use a more colorful highlighting for region selections, Nord Emacs now provid
 ```
 
 <p align="center"><strong>Selection in the editor with enabled <code>frost</code> region highlight style configuration</strong></p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/src/assets/images/ports/emacs/editor-config-selection-highlight-frost.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/src/assets/images/ports/emacs/editor-config-selection-highlight-frost.png"/></p>
 
 <p align="center"><strong>Selection in the editor with enabled <code>snowstorm</code> region highlight style configuration</strong></p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/src/assets/images/ports/emacs/editor-config-selection-highlight-snowstorm.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/src/assets/images/ports/emacs/editor-config-selection-highlight-snowstorm.png"/></p>
 
 **Custom Color Contrast** — #43 ⇄ #44 (⊶ 3e6bfdae)
 ↠ Please note that **this configuration has been implemented and deprecated again in this release version** through #73 that increased the default comment color (`nord3`) brightness by 10% from a lightness level of ~35% to ~45%

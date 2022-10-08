@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.nordtheme.com/ports/emacs" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/emacs/repository-hero.svg?sanitize=true"/></a></p>
+<p align="center"><a href="https://www.nordtheme.com/ports/emacs" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true"/></a></p>
 
 <p align="center"><a href="https://github.com/arcticicestudio/nord-emacs/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-emacs.svg?style=flat-square&label=Release&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/></a> <a href="https://www.nordtheme.com/docs/ports/emacs"><img src="https://img.shields.io/github/release/arcticicestudio/nord-emacs.svg?style=flat-square&label=Docs&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI%2BCiAgICA8cGF0aCBmaWxsPSIjZDhkZWU5IiBkPSJNMTMuNzQ2IDIuODEzYS42Ny42NyAwIDAgMC0uNTU5LS4xMzNMOCAzLjg0OGwtNS4xODgtMS4xOGEuNjY5LjY2OSAwIDAgMC0uNTcuMTMzLjY3Ny42NzcgMCAwIDAtLjI0Mi41MzF2OC4xMzNjLS4wMDguMzIuMjEuNTk4LjUyLjY2OGw1LjMzMiAxLjE5OWguMjk2bDUuMzMyLTEuMmEuNjY4LjY2OCAwIDAgMCAuNTItLjY2N1YzLjMzMmEuNjU5LjY1OSAwIDAgMC0uMjU0LS41MnpNMy4zMzIgNC4xNjhsNCAuODk4djYuNzY2bC00LS44OTh6bTkuMzM2IDYuNzY2bC00IC44OThWNS4wNjZsNC0uODk4em0wIDAiLz4KPC9zdmc%2BCg%3D%3D"/></a> <a href="https://github.com/arcticicestudio/nord-emacs/blob/develop/CHANGELOG.md#050"><img src="https://img.shields.io/github/release/arcticicestudio/nord-emacs.svg?style=flat-square&label=Changelog&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/></a></p>
 
@@ -10,7 +10,7 @@
 
 <p align="center">Designed for a fluent and clear workflow based on the <a href="https://www.nordtheme.com">Nord</a> color palette.</p>
 
-<p align="center"><a href="https://www.nordtheme.com/ports/emacs" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/emacs/overview-go.png"/></a></p>
+<p align="center"><a href="https://www.nordtheme.com/ports/emacs" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/overview-go.png"/></a></p>
 
 Build for Emacs's terminal- and GUI mode with _true colors_ and support for many third-party syntax and UI packages.
 
@@ -30,7 +30,7 @@ To install or update Nord Emacs
 2. run the `package-install` command
 3. type `nord-theme` and confirm with <kbd>↲</kbd>
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/emacs/ui-installation-package-manager.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/ui-installation-package-manager.png"/></p>
 
 For more setup methods see the [official installation & activation guide][nord-docs-home-install] as well as Emacs [official package install documentations][emacs-docs-pack_inst] for more details about the builtin package management.
 
@@ -58,19 +58,19 @@ To switch to the theme on-the-fly
 
 <p align="center"><strong>Your editor. Your style.</strong></p>
 <p align="center">A unified UI and editor syntax element design provides a clutter-free and fluidly merging appearance.</p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/emacs/overview-go-neotree.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/overview-go-neotree.png"/></p>
 
 <p align="center"><strong>Small details with unobtrusive styles.</strong></p>
 <p align="center">Small details with unobtrusive styles for popular and common code editor features like search result marker and brace matching — designed to get out of your way with a visually attractive appearance.</p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/emacs/editor-syntax-go-comments.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/editor-syntax-go-comments.png"/></p>
 
 <p align="center"><strong>Beautiful code to keep focused.</strong></p>
 <p align="center">Support for a wide range of programming languages — from bundled languages up to many popular syntax third-party packages.</p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/emacs/editor-syntax-java-enum.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/editor-syntax-java-enum.png"/></p>
 
 <p align="center"><strong>Configure it to fit your needs.</strong></p>
 <p align="center">Theme configurations like different <a href="https://www.nordtheme.com/docs/ports/emacs/configurations#region-highlight-style" target="_blank">region highlight styles</a> or <a href="https://www.nordtheme.com/docs/ports/emacs/configurations#uniform-mode-lines" target="_blank">uniform mode lines</a> allow to customize the theme to match your personal preferences.</p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/emacs/editor-syntax-java-enum.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/editor-syntax-java-enum.png"/></p>
 
 ## Contributing
 
@@ -82,7 +82,7 @@ Please take a moment to read Nord's full [contributing guide][nord-contrib-guide
 
 The guide also includes information about [minimal, complete, and verifiable examples][nord-contrib-guide-mcve] and other ways to contribute to the project like [improving existing issues][nord-contrib-guide-impr-issues] and [giving feedback on issues and pull requests][nord-contrib-guide-feedback].
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/nord/repository-footer-separator.svg?sanitize=true" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/nord/repository-footer-separator.svg?sanitize=true" /></p>
 
 <p align="center">Copyright &copy; 2016-present <a href="https://www.arcticicestudio.com" target="_blank">Arctic Ice Studio</a> and <a href="https://www.svengreb.de" target="_blank">Sven Greb</a></p>
 
