@@ -509,6 +509,22 @@
    `(diff-hl-change ((,class (:background ,nord13))))
    `(diff-hl-insert ((,class (:background ,nord14))))
    `(diff-hl-delete ((,class (:background ,nord11))))
+
+   ;; > ERC
+   `(erc-action-face ((,class (:foreground ,nord7))))
+   `(erc-current-nick-face ((,class (:foreground ,nord8 :weight unspecified))))
+   `(erc-dangerous-host-face ((,class (:foreground ,nord11))))
+   `(erc-direct-msg-face ((,class (:foreground ,nord11))))
+   `(erc-error-face ((,class (:foreground ,nord11))))
+   `(erc-fool-face ((,class (:foreground ,nord-comment))))
+   `(erc-input-face ((,class (:foreground ,nord8 :weight unspecified))))
+   `(erc-keyword-face ((,class (:foreground ,nord15 :weight bold))))
+   `(erc-my-nick-face ((,class (:foreground ,nord8 :weight bold))))
+   `(erc-nick-msg-face ((,class (:foreground ,nord11 :weight bold))))
+   `(erc-notice-face ((,class (:foreground ,nord-comment :weight unspecified))))
+   `(erc-pal-face ((,class (:foreground ,nord15 :weight bold))))
+   `(erc-prompt-face ((,class (:foreground ,nord0 :background ,nord8 :weight bold))))
+   `(erc-timestamp-face ((,class (:foreground ,nord10))))
    
     ;; > Evil
     `(evil-ex-info ((,class (:foreground ,nord8))))
