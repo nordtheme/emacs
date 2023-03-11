@@ -1,13 +1,12 @@
 ;;; nord-theme.el --- An arctic, north-bluish clean and elegant theme
 
-;; Copyright (C) 2016-present Arctic Ice Studio <development@arcticicestudio.com> (https://www.arcticicestudio.com)
-;; Copyright (C) 2016-present Sven Greb <development@svengreb.de> (https://www.svengreb.de)
+;; Copyright (c) 2016-present Sven Greb <development@svengreb.de> (https://www.svengreb.de)
 
 ;; Title: Nord Theme
 ;; Project: nord-emacs
 ;; Version: 0.5.0
-;; URL: https://github.com/arcticicestudio/nord-emacs
-;; Author: Arctic Ice Studio <development@arcticicestudio.com>
+;; URL: https://github.com/nordtheme/emacs
+;; Author: Sven Greb <development@svengreb.de>
 ;; Package-Requires: ((emacs "24"))
 ;; License: MIT
 
@@ -52,7 +51,7 @@
   "Allows to define a custom comment color brightness with percentage adjustments from 0% - 20%.
   As of version 0.4.0, this variable is obsolete/deprecated and has no effect anymore and will be removed in version 1.0.0!
   The comment color brightness has been increased by 10% by default.
-  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  Please see https://github.com/nordtheme/emacs/issues/73 for more details."
   :type 'integer
   :group 'nord)
 
@@ -60,7 +59,7 @@
   'nord-comment-brightness
   "The custom color brightness feature has been deprecated and will be removed in version 1.0.0!
   The comment color brightness has been increased by 10% by default.
-  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  Please see https://github.com/nordtheme/emacs/issues/73 for more details."
   "0.4.0")
 
 (defcustom nord-region-highlight nil
@@ -83,14 +82,14 @@
   The value must be greater or equal to 0 and less or equal to 20, otherwise the default 'nord3' color is used.
   As of version 0.4.0, this function is obsolete/deprecated and has no effect anymore and will be removed in version 1.0.0!
   The comment color brightness has been increased by 10% by default.
-  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  Please see https://github.com/nordtheme/emacs/issues/73 for more details."
   (nth 10 nord-theme--brightened-comments))
 
 (make-obsolete
   'nord-theme--brightened-comment-color
   "The custom color brightness feature has been deprecated and will be removed in version 1.0.0!\
   The comment color brightness has been increased by 10% by default.\
-  Please see https://github.com/arcticicestudio/nord-emacs/issues/73 for more details."
+  Please see https://github.com/nordtheme/emacs/issues/73 for more details."
   "0.4.0")
 
 (defun nord-display-truecolor-or-graphic-p ()
@@ -278,7 +277,7 @@
 
     ;; `show-paren-match-face` and `show-paren-mismatch-face` are deprecated since Emacs version 22.1 and were
     ;; removed in Emacs 25.
-    ;; https://github.com/arcticicestudio/nord-emacs/issues/75
+    ;; https://github.com/nordtheme/emacs/issues/75
     ;; http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=c430f7e23fc2c22f251ace4254e37dea1452dfc3
     ;; https://github.com/emacs-mirror/emacs/commit/c430f7e23fc2c22f251ace4254e37dea1452dfc3
     `(show-paren-match-face ((,class (:foreground ,nord0 :background ,nord8))))
@@ -509,7 +508,7 @@
    `(diff-hl-change ((,class (:background ,nord13))))
    `(diff-hl-insert ((,class (:background ,nord14))))
    `(diff-hl-delete ((,class (:background ,nord11))))
-   
+
     ;; > Evil
     `(evil-ex-info ((,class (:foreground ,nord8))))
     `(evil-ex-substitute-replacement ((,class (:foreground ,nord9))))
