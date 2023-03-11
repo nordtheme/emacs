@@ -1,12 +1,26 @@
-<p align="center"><a href="https://www.nordtheme.com/ports/emacs" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true"/></a></p>
+<p align="center">
+  <a href="https://www.nordtheme.com/ports/emacs" target="_blank">
+    <picture>
+      <source srcset="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+      <img srcset="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true" width="100%" />
+    </picture>
+  </a>
+</p>
 
-<p align="center"><a href="https://github.com/arcticicestudio/nord-emacs/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-emacs.svg?style=flat-square&label=Release&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/></a> <a href="https://www.nordtheme.com/docs/ports/emacs"><img src="https://img.shields.io/github/release/arcticicestudio/nord-emacs.svg?style=flat-square&label=Docs&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI%2BCiAgICA8cGF0aCBmaWxsPSIjZDhkZWU5IiBkPSJNMTMuNzQ2IDIuODEzYS42Ny42NyAwIDAgMC0uNTU5LS4xMzNMOCAzLjg0OGwtNS4xODgtMS4xOGEuNjY5LjY2OSAwIDAgMC0uNTcuMTMzLjY3Ny42NzcgMCAwIDAtLjI0Mi41MzF2OC4xMzNjLS4wMDguMzIuMjEuNTk4LjUyLjY2OGw1LjMzMiAxLjE5OWguMjk2bDUuMzMyLTEuMmEuNjY4LjY2OCAwIDAgMCAuNTItLjY2N1YzLjMzMmEuNjU5LjY1OSAwIDAgMC0uMjU0LS41MnpNMy4zMzIgNC4xNjhsNCAuODk4djYuNzY2bC00LS44OTh6bTkuMzM2IDYuNzY2bC00IC44OThWNS4wNjZsNC0uODk4em0wIDAiLz4KPC9zdmc%2BCg%3D%3D"/></a></p>
+<p align="center">
+  <a href="https://github.com/nordtheme/emacs/releases/latest" target="_blank">
+    <img src="https://img.shields.io/github/release/nordtheme/emacs.svg?style=flat-square&label=Release&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/>
+  </a>
+  <a href="https://www.nordtheme.com/docs/ports/emacs" target="_blank">
+    <img src="https://img.shields.io/github/release/nordtheme/emacs.svg?style=flat-square&label=Docs&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI%2BCiAgICA8cGF0aCBmaWxsPSIjZDhkZWU5IiBkPSJNMTMuNzQ2IDIuODEzYS42Ny42NyAwIDAgMC0uNTU5LS4xMzNMOCAzLjg0OGwtNS4xODgtMS4xOGEuNjY5LjY2OSAwIDAgMC0uNTcuMTMzLjY3Ny42NzcgMCAwIDAtLjI0Mi41MzF2OC4xMzNjLS4wMDguMzIuMjEuNTk4LjUyLjY2OGw1LjMzMiAxLjE5OWguMjk2bDUuMzMyLTEuMmEuNjY4LjY2OCAwIDAgMCAuNTItLjY2N1YzLjMzMmEuNjU5LjY1OSAwIDAgMC0uMjU0LS41MnpNMy4zMzIgNC4xNjhsNCAuODk4djYuNzY2bC00LS44OTh6bTkuMzM2IDYuNzY2bC00IC44OThWNS4wNjZsNC0uODk4em0wIDAiLz4KPC9zdmc%2BCg%3D%3D"/>
+  </a>
+</p>
 
 <!--lint disable no-duplicate-headings-->
 
 # 0.5.0
 
-![Release Date: 2020-01-08](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2020-01-08&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.5.0&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/11) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.5.0&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/7)
+![Release Date: 2020-01-08](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2020-01-08&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.5.0&colorA=4c566a&colorB=88c0d0)](https://github.com/orgs/nordtheme/projects/1/views/10) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.5.0&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/emacs/milestone/7)
 
 ## Feature
 
@@ -57,7 +71,7 @@ This is a first step to fix the problems described and tracked in #59.
 
 # 0.4.0
 
-![Release Date: 2019-06-16](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2016-06-16&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.4.0&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/8) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.4.0&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/6)
+![Release Date: 2019-06-16](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2016-06-16&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.4.0&colorA=4c566a&colorB=88c0d0)](https://github.com/orgs/nordtheme/projects/1/views/10) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.4.0&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/emacs/milestone/6)
 
 ## Features
 
@@ -118,7 +132,7 @@ Please see #73 and #74 for more details and the migration guide.
 **Comment Color Brightness** — #73 ⇄ #74 (⊶ 9ed7b9c2)
 ↠ Implemented the increase of the default comment color (`nord3`) brightness by 10% from a lightness level of ~35% to ~45%.
 
-➜ **Please see [arcticicestudio/nord#94][gh-nord#94] for all details about this design change decision**!
+➜ **Please see [nordtheme/nord#94][gh-nord#94] for all details about this design change decision**!
 
 ⚠ **NOTE**: This change also **deprecates the „Custom Comment Contrast“ configuration** implemented in #44 that will be removed in Nord Emacs version 1.0.0!
 The default comment color has been adjusted so the configuration is not required anymore for users to increase the brightness on their own.
@@ -248,7 +262,7 @@ _2017-03-25_
 
 ## Bug Fixes
 
-❯ Fixed the package documentation format to adhere to the [MELPA contribution standard](https://github.com/melpa/melpa/blob/master/CONTRIBUTING.md). (@arcticicestudio, 8b835e60)
+❯ Fixed the package documentation format to adhere to the [MELPA contribution standard](https://github.com/melpa/melpa/blob/master/CONTRIBUTING.md). (@svengreb, 8b835e60)
 
 # 0.1.0
 
@@ -256,41 +270,62 @@ _2017-03-25_
 
 ## Features
 
-Detailed information about [features](https://github.com/arcticicestudio/nord-emacs/blob/develop/README.md#features), [supported packages](https://github.com/arcticicestudio/nord-emacs/blob/develop/README.md#package-support) and install instructions can be found in the [README](https://github.com/arcticicestudio/nord-emacs/blob/develop/README.md#installation) and in the [project wiki](https://github.com/arcticicestudio/nord-emacs/wiki).
+Detailed information about [features](https://github.com/nordtheme/emacs/blob/develop/readme.md#features), [supported packages](https://github.com/nordtheme/emacs/blob/develop/readme.md#package-support) and install instructions can be found in the [README](https://github.com/nordtheme/emacs/blob/develop/readme.md#installation).
 
-❯ Implemented the main theme file [`nord-theme.el`](https://github.com/arcticicestudio/nord-emacs/blob/develop/nord-theme.el). (@arcticicestudio, #1, e51f7593)
+❯ Implemented the main theme file [`nord-theme.el`](https://github.com/nordtheme/emacs/blob/develop/nord-theme.el). (@svengreb, #1, e51f7593)
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-package-syntax-jdee.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/emacs/develop/assets/scrot-package-syntax-jdee.png"/></p>
 
-<p align="center"><strong>Non-obtrusive bracket matching- and search marker.</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-feature-bracket-matching.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrot-feature-search.gif"/></p>
+<p align="center"><strong>Non-obtrusive bracket matching- and search marker.</strong><br><img src="https://raw.githubusercontent.com/nordtheme/emacs/develop/assets/scrot-feature-bracket-matching.png"/><br><img src="https://raw.githubusercontent.com/nordtheme/emacs/develop/assets/scrot-feature-search.gif"/></p>
 
-<p align="center"><strong>Colors of selected code can still be easily recognized.</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-emacs/develop/assets/scrcast-feature-selection.gif"/></p>
+<p align="center"><strong>Colors of selected code can still be easily recognized.</strong><br><img src="https://raw.githubusercontent.com/nordtheme/emacs/develop/assets/scrcast-feature-selection.gif"/></p>
 
 ❯ Implemented support for multiple syntax packages:
 
-- Elixir (@arcticicestudio, #18, 0b879fb1)
-- Enhanced Ruby (@arcticicestudio, #15, 7b59c16f)
-- JavaScript `js2-mode` and `js3-mode` (@arcticicestudio, #7, ffe1b276)
-- Markdown (@arcticicestudio, #3, 02e7065f)
-- Web (@arcticicestudio, #8, f1b893e9)
+- Elixir (@svengreb, #18, 0b879fb1)
+- Enhanced Ruby (@svengreb, #15, 7b59c16f)
+- JavaScript `js2-mode` and `js3-mode` (@svengreb, #7, ffe1b276)
+- Markdown (@svengreb, #3, 02e7065f)
+- Web (@svengreb, #8, f1b893e9)
 
 ❯ Implemented support for multiple UI packages:
 
-- Anzu (@arcticicestudio, #19, 6c3d0baf)
-- Company (@arcticicestudio, #10, 7b8b6ec8)
-- Evil (@arcticicestudio, #5, a240b411)
-- Flycheck (@arcticicestudio, #17, 9c784ef6)
-- Git Gutter (@arcticicestudio, #4, fa6ea1f8)
-- Helm (@arcticicestudio, #16, 264ce64d)
-- Magit (@arcticicestudio, #16, 641dd503)
-- Org (@arcticicestudio, #2, 6b60bd55)
-- Powerline (`powerline-evil`) (@arcticicestudio, #11, 5a854190)
-- Rainbow Delimters (@arcticicestudio, #14, 6ee97d24)
+- Anzu (@svengreb, #19, 6c3d0baf)
+- Company (@svengreb, #10, 7b8b6ec8)
+- Evil (@svengreb, #5, a240b411)
+- Flycheck (@svengreb, #17, 9c784ef6)
+- Git Gutter (@svengreb, #4, fa6ea1f8)
+- Helm (@svengreb, #16, 264ce64d)
+- Magit (@svengreb, #16, 641dd503)
+- Org (@svengreb, #2, 6b60bd55)
+- Powerline (`powerline-evil`) (@svengreb, #11, 5a854190)
+- Rainbow Delimters (@svengreb, #14, 6ee97d24)
 
 # 0.0.0
 
 _2017-03-25_
 **Project Initialization**
+
+<p align="center">
+  <picture>
+    <source srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/dark/spaced.png" srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/dark/spaced-2x.png 2x" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+    <source srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/light/spaced.png" srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/light/spaced-2x.png 2x" width="100%" media="(prefers-color-scheme: dark)" />
+    <img src="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/dark/spaced.png" srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/dark/spaced-2x.png 2x" width="100%" />
+  </picture>
+</p>
+
+<p align="center">
+  Copyright &copy; 2016-present <a href="https://www.svengreb.de" target="_blank">Sven Greb</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/nordtheme/emacs/blob/develop/license" target="_blank">
+    <img src="https://img.shields.io/static/v1.svg?style=flat-square&label=License&message=MIT&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/>
+  </a>
+  <a href="https://www.svengreb.de">
+    <img src="https://img.shields.io/static/v1.svg?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABMklEQVQ4jcWQvUoDQRRGz52s5IfVIiDWPkGKFFaCIVaGdIagjcFAwICFb7DvIK6QQlNpY2UQLMQVBbEQ0SewFkGbKCQmOzaTJay7/lR+zTAf9xwuF/47Mv45rdezqWEq72v/RWZnHgqOMwDwHMfSj085JSqb6Pu38we7r18E3nqzhmYbsE11rxKsAvhDfQiSM30XYbOw57YDwfnaRl6U3ABWaMNn806H+oGPzBX3d+4UgChZiYBHYBgGsBLoKoAyhR0x9G20Zmpc4P1ZoMQDcwMNclFrdhBKv6M5WWi7ZQGtjEUn35IV4OwnVjSX/WGmKqCDDUa5rmyle3bvGFiMg3WGUsF1u0EXHoqTRMGRgkAy2eugKZrqijRLYThWANBpNDL2h3UE0J0YLJdbrfe42f/NJ0wqY7/KcXKPAAAAAElFTkSuQmCC&label=lovely%20crafted%20in&message=Germany&colorA=4c566a&colorB=88c0d0"/>
+  </a>
+</p>
 
 <!--
 +------------------+
@@ -306,21 +341,19 @@ _2017-03-25_
 
 <!-- Base Links -->
 
-[gh-nord]: https://github.com/arcticicestudio/nord
-[nord-docs-colors#frost]: https://www.nordtheme.com/docs/colors-and-palettes#frost
+[gh-nord]: https://github.com/nordtheme/nord
 [nord-docs-colors#frost]: https://www.nordtheme.com/docs/colors-and-palettes#frost
 [nord-docs-colors#snowstorm]: https://www.nordtheme.com/docs/colors-and-palettes#snow-storm
 [nord]: https://www.nordtheme.com
 [org-mode-docs-headings]: https://orgmode.org/guide/Headings-and-sections.html
-[org-mode]: https://orgmode.org
 
 <!--v 0.4.0 -->
 
 [gh-gnunn1/tilix]: https://github.com/gnunn1/tilix
 [gh-licensee/licensee]: https://github.com/licensee/licensee
 [gh-nord-docs#155]: https://github.com/arcticicestudio/nord-docs/issues/155
-[gh-nord#55]: https://github.com/arcticicestudio/nord/issues/55
-[gh-nord#94]: https://github.com/arcticicestudio/nord/issues/94
+[gh-nord#55]: https://github.com/nordtheme/nord/issues/55
+[gh-nord#94]: https://github.com/nordtheme/nord/issues/94
 [gh-user-gguimaraesbr]: https://github.com/gguimaraesbr
 [gh-user-localredhead]: https://github.com/localredhead
 [gh-user-slippycheeze]: https://github.com/slippycheeze
