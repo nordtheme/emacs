@@ -173,6 +173,32 @@
     ;; > C
     `(c-annotation-face ((,class (:foreground ,nord-annotation))))
 
+    ;; > agda
+    `(agda2-highlight-keyword-face ((t (:foreground ,nord-keyword))))
+    `(agda2-highlight-string-face ((t (:foreground ,nord-string))))
+    `(agda2-highlight-number-face ((t (:foreground ,nord-numeric))))
+    `(agda2-highlight-symbol-face ((t (:foreground ,nord-operator))))
+    `(agda2-highlight-primitive-type-face ((t (:foreground ,nord-class))))
+    `(agda2-highlight-bound-variable-face ((t (:foreground ,nord-annotation))))
+    `(agda2-highlight-inductive-constructor-face ((t (:foreground ,nord-regexp))))
+    `(agda2-highlight-coinductive-constructor-face ((t (:foreground ,nord-regexp))))
+    `(agda2-highlight-datatype-face ((t (:foreground ,nord-method))))
+    `(agda2-highlight-field-face ((t (:foreground ,nord-preprocessor))))
+    `(agda2-highlight-function-face ((t (:foreground ,nord-method))))
+    `(agda2-highlight-module-face ((t (:foreground ,nord-class))))
+    `(agda2-highlight-postulate-face ((t (:foreground ,nord-class))))
+    `(agda2-highlight-primitive-face ((t (:foreground ,nord-class))))
+    `(agda2-highlight-record-face ((t (:foreground ,nord-class))))
+    `(agda2-highlight-dotted-face ((t nil)))
+    `(agda2-highlight-operator-face ((t nil)))
+    `(agda2-highlight-error-face ((t (:foreground ,nord11 :underline t))))
+    `(agda2-highlight-unsolved-meta-face ((t (:background ,nord-region-highlight-foreground :foreground ,nord13))))
+    `(agda2-highlight-unsolved-constraint-face ((t (:background ,nord-region-highlight-foreground :foreground ,nord13))))
+    `(agda2-highlight-termination-problem-face ((t (:background ,nord-region-highlight-foreground :foreground ,nord13))))
+    `(agda2-highlight-incomplete-pattern-face ((t (:background ,nord-region-highlight-foreground :foreground ,nord13))))
+    `(agda2-highlight-typechecks-face ((t (:background ,nord7 :foreground ,nord10))))
+    `(agda2-highlight-catchall-clause-face ((t (:background ,nord2))))
+
     ;; > diff
     `(diff-added ((,class (:foreground ,nord14))))
     `(diff-changed ((,class (:foreground ,nord13))))
