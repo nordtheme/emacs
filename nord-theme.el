@@ -334,7 +334,18 @@
     `(window-divider ((,class (:background ,nord3))))
     `(window-divider-first-pixel ((,class (:background ,nord3))))
     `(window-divider-last-pixel ((,class (:background ,nord3))))
-
+    ;; tabbar
+    `(tabbar-default ((,class (:foreground ,nord8 :background ,nord3 :height 1.0))))   
+    `(tabbar-separator ((,class (:foreground ,nord8 :background ,nord3))))
+    `(tabbar-highlight ((,class (:inherit highlight))))
+    `(tabbar-button ((,class (:foreground ,nord8 :background ,nord3))))
+    `(tabbar-button-highlight ((,class (:inherit tabbar-button :inverse-video t))))
+    `(tabbar-modified ((,class (:inherit tabbar-default :foreground ,nord15 :bold bold)))) 
+    `(tabbar-unselected ((,class (:inherit tabbar-default :foreground ,nord8 :box (:line-width -5 :color ,nord3)))))
+    `(tabbar-unselected-modified ((,class (:inherit 'tabbar-modified) )))
+    `(tabbar-selected ((,class (:inherit tabbar-default :bold bold :foreground ,nord14 :background ,nord3))))
+    `(tabbar-selected-modified ((,class (:inherit tabbar-selected :foreground ,nord7))))
+ 
     ;;;; +-----------------+
     ;;;; + Package Support +
     ;;;; +-----------------+
