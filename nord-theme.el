@@ -94,7 +94,7 @@
 
 (defun nord-display-truecolor-or-graphic-p ()
   "Returns whether the display can display nord colors"
-  (or (= (display-color-cells) 16777216) (display-graphic-p)))
+  (or (= (display-color-cells) 16777216) (display-graphic-p) (daemonp)))
 
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
