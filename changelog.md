@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://www.nordtheme.com/ports/emacs" target="_blank">
     <picture>
-      <source srcset="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-      <img srcset="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true" width="100%" />
+      <source srcset="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+      <img srcset="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true" width="100%" />
     </picture>
   </a>
 </p>
@@ -100,10 +100,10 @@ By default, only the mode line of the active buffer uses `nord3` as background c
 ```
 
 <p align="center"><strong>Default mode lines</strong></p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/content/docs/ports/emacs/configuration/uniform-mode-lines-disabled.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/web/main/content/docs/ports/emacs/configuration/uniform-mode-lines-disabled.png"/></p>
 
 <p align="center"><strong>Uniform mode lines</strong></p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/content/docs/ports/emacs/configuration/uniform-mode-lines-enabled.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/web/main/content/docs/ports/emacs/configuration/uniform-mode-lines-enabled.png"/></p>
 
 **Custom Region Highlight Styles** — #45, #32 ⇄ #46 (⊶ b43a2491)
 ↠ By default, Nord Emacs uses `nord2` as background color for selected text in the editor to provide a sane default style.
@@ -118,10 +118,10 @@ To use a more colorful highlighting for region selections, Nord Emacs now provid
 ```
 
 <p align="center"><strong>Selection in the editor with enabled <code>frost</code> region highlight style configuration</strong></p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/src/assets/images/ports/emacs/editor-config-selection-highlight-frost.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/web/main/src/assets/images/ports/emacs/editor-config-selection-highlight-frost.png"/></p>
 
 <p align="center"><strong>Selection in the editor with enabled <code>snowstorm</code> region highlight style configuration</strong></p>
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/src/assets/images/ports/emacs/editor-config-selection-highlight-snowstorm.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/web/main/src/assets/images/ports/emacs/editor-config-selection-highlight-snowstorm.png"/></p>
 
 **Custom Color Contrast** — #43 ⇄ #44 (⊶ 3e6bfdae)
 ↠ Please note that **this configuration has been implemented and deprecated again in this release version** through #73 that increased the default comment color (`nord3`) brightness by 10% from a lightness level of ~35% to ~45%
@@ -351,7 +351,7 @@ _2017-03-25_
 
 [gh-gnunn1/tilix]: https://github.com/gnunn1/tilix
 [gh-licensee/licensee]: https://github.com/licensee/licensee
-[gh-nord-docs#155]: https://github.com/arcticicestudio/nord-docs/issues/155
+[gh-nord-docs#155]: https://github.com/nordtheme/web/issues/155
 [gh-nord#55]: https://github.com/nordtheme/nord/issues/55
 [gh-nord#94]: https://github.com/nordtheme/nord/issues/94
 [gh-user-gguimaraesbr]: https://github.com/gguimaraesbr
