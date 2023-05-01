@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://www.nordtheme.com/ports/emacs" target="_blank">
     <picture>
-      <source srcset="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-      <img srcset="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true" width="100%" />
+      <source srcset="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+      <img srcset="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/repository-hero.svg?sanitize=true" width="100%" />
     </picture>
   </a>
 </p>
@@ -20,14 +20,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/arcticicestudio/styleguide-javascript/releases/latest" target="_blank">
-    <img src="https://img.shields.io/github/release/arcticicestudio/styleguide-javascript.svg?style=flat-square&label=JavaScript%20Style%20Guide&logoColor=eceff4&colorA=4c566a&colorB=88c0d0&logo=javascript"/>
+  <a href="https://github.com/svengreb/styleguide-javascript/releases/latest" target="_blank">
+    <img src="https://img.shields.io/github/release/svengreb/styleguide-javascript.svg?style=flat-square&label=JavaScript%20Style%20Guide&logoColor=eceff4&colorA=4c566a&colorB=88c0d0&logo=javascript"/>
   </a>
-  <a href="https://github.com/arcticicestudio/styleguide-markdown/releases/latest" target="_blank">
-    <img src="https://img.shields.io/github/release/arcticicestudio/styleguide-markdown.svg?style=flat-square&label=Markdown%20Style%20Guide&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOSIgaGVpZ2h0PSIzOSIgdmlld0JveD0iMCAwIDM5IDM5Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNEOERFRTkiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMS41IDEuNWgzNnYzNmgtMzZ6Ii8%2BPHBhdGggZmlsbD0iI0Q4REVFOSIgZD0iTTIwLjY4MyAyNS42NTVsNS44NzItMTMuNDhoLjU2Nmw1Ljg3MyAxMy40OGgtMS45OTZsLTQuMTU5LTEwLjA1Ni00LjE2MSAxMC4wNTZoLTEuOTk1em0tMi42OTYgMGwtMTMuNDgtNS44NzJ2LS41NjZsMTMuNDgtNS44NzJ2MS45OTVMNy45MzEgMTkuNWwxMC4wNTYgNC4xNnoiLz48L3N2Zz4%3D"/>
+  <a href="https://github.com/svengreb/styleguide-markdown/releases/latest" target="_blank">
+    <img src="https://img.shields.io/github/release/svengreb/styleguide-markdown.svg?style=flat-square&label=Markdown%20Style%20Guide&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOSIgaGVpZ2h0PSIzOSIgdmlld0JveD0iMCAwIDM5IDM5Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNEOERFRTkiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMS41IDEuNWgzNnYzNmgtMzZ6Ii8%2BPHBhdGggZmlsbD0iI0Q4REVFOSIgZD0iTTIwLjY4MyAyNS42NTVsNS44NzItMTMuNDhoLjU2Nmw1Ljg3MyAxMy40OGgtMS45OTZsLTQuMTU5LTEwLjA1Ni00LjE2MSAxMC4wNTZoLTEuOTk1em0tMi42OTYgMGwtMTMuNDgtNS44NzJ2LS41NjZsMTMuNDgtNS44NzJ2MS45OTVMNy45MzEgMTkuNWwxMC4wNTYgNC4xNnoiLz48L3N2Zz4%3D"/>
   </a>
-  <a href="https://github.com/arcticicestudio/styleguide-git/releases/latest" target="_blank">
-    <img src="https://img.shields.io/github/release/arcticicestudio/styleguide-git.svg?style=flat-square&label=Git%20Style%20Guide&logoColor=eceff4&colorA=4c566a&colorB=88c0d0&logo=git"/>
+  <a href="https://github.com/svengreb/styleguide-git/releases/latest" target="_blank">
+    <img src="https://img.shields.io/github/release/svengreb/styleguide-git.svg?style=flat-square&label=Git%20Style%20Guide&logoColor=eceff4&colorA=4c566a&colorB=88c0d0&logo=git"/>
   </a>
 </p>
 
@@ -49,7 +49,7 @@
 
 <p align="center">
   <a href="https://www.nordtheme.com/ports/emacs" target="_blank">
-    <img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/overview-go.png"/>
+    <img src="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/overview-go.png"/>
   </a>
 </p>
 
@@ -73,7 +73,7 @@ To install or update Nord Emacs
 
 <p align="center">
   <picture>
-    <img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/ui-installation-package-manager.png"/>
+    <img src="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/ui-installation-package-manager.png"/>
   </picture>
 </p>
 
@@ -105,7 +105,7 @@ To switch to the theme on-the-fly
 <p align="center">A unified UI and editor syntax element design provides a clutter-free and fluidly merging appearance.</p>
 <p align="center">
   <picture>
-    <img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/overview-go-neotree.png"/>
+    <img src="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/overview-go-neotree.png"/>
   </picture>
 </p>
 
@@ -113,7 +113,7 @@ To switch to the theme on-the-fly
 <p align="center">Small details with unobtrusive styles for popular and common code editor features like search result marker and brace matching — designed to get out of your way with a visually attractive appearance.</p>
 <p align="center">
   <picture>
-    <img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/editor-syntax-go-comments.png"/>
+    <img src="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/editor-syntax-go-comments.png"/>
   </picture>
 </p>
 
@@ -121,7 +121,7 @@ To switch to the theme on-the-fly
 <p align="center">Support for a wide range of programming languages — from bundled languages up to many popular syntax third-party packages.</p>
 <p align="center">
   <picture>
-    <img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/editor-syntax-java-enum.png"/>
+    <img src="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/editor-syntax-java-enum.png"/>
   </picture>
 </p>
 
@@ -129,7 +129,7 @@ To switch to the theme on-the-fly
 <p align="center">Theme configurations like different <a href="https://www.nordtheme.com/docs/ports/emacs/configurations#region-highlight-style" target="_blank">region highlight styles</a> or <a href="https://www.nordtheme.com/docs/ports/emacs/configurations#uniform-mode-lines" target="_blank">uniform mode lines</a> allow to customize the theme to match your personal preferences.</p>
 <p align="center">
   <picture>
-    <img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/emacs/editor-syntax-java-enum.png"/>
+    <img src="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/editor-syntax-java-enum.png"/>
   </picture>
 </p>
 
