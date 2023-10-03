@@ -126,7 +126,7 @@ To switch to the theme on-the-fly
 </p>
 
 <p align="center"><strong>Configure it to fit your needs.</strong></p>
-<p align="center">Theme configurations like different <a href="https://www.nordtheme.com/docs/ports/emacs/configurations#region-highlight-style" target="_blank">region highlight styles</a> or <a href="https://www.nordtheme.com/docs/ports/emacs/configurations#uniform-mode-lines" target="_blank">uniform mode lines</a> allow to customize the theme to match your personal preferences.</p>
+<p align="center">Theme configurations like different <a href="https://www.nordtheme.com/docs/ports/emacs/configuration#region-highlight-style" target="_blank">region highlight styles</a> or <a href="https://www.nordtheme.com/docs/ports/emacs/configuration#uniform-mode-lines" target="_blank">uniform mode lines</a> allow to customize the theme to match your personal preferences.</p>
 <p align="center">
   <picture>
     <img src="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/emacs/editor-syntax-java-enum.png"/>
