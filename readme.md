@@ -81,7 +81,7 @@ For more setup methods see the [official installation & activation guide][nord-d
 
 #### Activation
 
-Make sure the [`~/.emacs.d/themes` directory][emacs-docs-custh] has been added to Emacs _load path_ by adding it to the list in your [init file][emacs-docs-initfile] (`.init.el`):
+Make sure the [`~/.emacs.d/themes` directory][emacs-docs-custh] has been added to Emacs _load path_ by adding it to the list in your [init file][emacs-docs-initfile] (`init.el`):
 
 ```lisp
 (add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
