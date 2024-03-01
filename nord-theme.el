@@ -96,9 +96,13 @@
   "Returns whether the display can display nord colors"
   (or (= (display-color-cells) 16777216) (display-graphic-p)))
 
+;; Starting with emacs-29, nil should not be used for face colours.
+;; Using unspecified instead.
+(setq nord--unspec (when (>= emacs-major-version 29) 'unspecified))
+
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
-  (nord0 (if (nord-display-truecolor-or-graphic-p) "#2E3440" nil))
+  (nord0 (if (nord-display-truecolor-or-graphic-p) "#2E3440" nord--unspec))
   (nord1 (if (nord-display-truecolor-or-graphic-p) "#3B4252" "black"))
   (nord2 (if (nord-display-truecolor-or-graphic-p) "#434C5E" "#434C5E"))
   (nord3 (if (nord-display-truecolor-or-graphic-p) "#4C566A" "brightblack"))
@@ -131,7 +135,7 @@
   (nord-variable (if (nord-display-truecolor-or-graphic-p) "#D8DEE9" "#D8DEE9"))
   (nord-region-highlight-foreground (if (or
     (string= nord-region-highlight "frost")
-    (string= nord-region-highlight "snowstorm")) "#2E3440" nil))
+    (string= nord-region-highlight "snowstorm")) "#2E3440" nord--unspec))
   (nord-region-highlight-background (if
     (string= nord-region-highlight "frost") "#88C0D0"
       (if (string= nord-region-highlight "snowstorm") "#D8DEE9" "#434C5E")))
