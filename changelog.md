@@ -270,15 +270,15 @@ _2017-03-25_
 
 ## Features
 
-Detailed information about [features](https://github.com/nordtheme/emacs/blob/develop/readme.md#features), [supported packages](https://github.com/nordtheme/emacs/blob/develop/readme.md#package-support) and install instructions can be found in the [README](https://github.com/nordtheme/emacs/blob/develop/readme.md#installation).
+Detailed information about [features](https://github.com/nordtheme/emacs/blob/master/readme.md#features), [supported packages](https://github.com/nordtheme/emacs/blob/master/readme.md#package-support) and install instructions can be found in the [README](https://github.com/nordtheme/emacs/blob/master/readme.md#installation).
 
-❯ Implemented the main theme file [`nord-theme.el`](https://github.com/nordtheme/emacs/blob/develop/nord-theme.el). (@svengreb, #1, e51f7593)
+❯ Implemented the main theme file [`nord-theme.el`](https://github.com/nordtheme/emacs/blob/master/nord-theme.el). (@svengreb, #1, e51f7593)
 
-<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/emacs/develop/assets/scrot-package-syntax-jdee.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/emacs/master/assets/scrot-package-syntax-jdee.png"/></p>
 
-<p align="center"><strong>Non-obtrusive bracket matching- and search marker.</strong><br><img src="https://raw.githubusercontent.com/nordtheme/emacs/develop/assets/scrot-feature-bracket-matching.png"/><br><img src="https://raw.githubusercontent.com/nordtheme/emacs/develop/assets/scrot-feature-search.gif"/></p>
+<p align="center"><strong>Non-obtrusive bracket matching- and search marker.</strong><br><img src="https://raw.githubusercontent.com/nordtheme/emacs/master/assets/scrot-feature-bracket-matching.png"/><br><img src="https://raw.githubusercontent.com/nordtheme/emacs/master/assets/scrot-feature-search.gif"/></p>
 
-<p align="center"><strong>Colors of selected code can still be easily recognized.</strong><br><img src="https://raw.githubusercontent.com/nordtheme/emacs/develop/assets/scrcast-feature-selection.gif"/></p>
+<p align="center"><strong>Colors of selected code can still be easily recognized.</strong><br><img src="https://raw.githubusercontent.com/nordtheme/emacs/master/assets/scrcast-feature-selection.gif"/></p>
 
 ❯ Implemented support for multiple syntax packages:
 
@@ -319,7 +319,7 @@ _2017-03-25_
 </p>
 
 <p align="center">
-  <a href="https://github.com/nordtheme/emacs/blob/develop/license" target="_blank">
+  <a href="https://github.com/nordtheme/emacs/blob/master/license" target="_blank">
     <img src="https://img.shields.io/static/v1.svg?style=flat-square&label=License&message=MIT&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/>
   </a>
   <a href="https://www.svengreb.de">

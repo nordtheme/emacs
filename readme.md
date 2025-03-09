@@ -14,7 +14,7 @@
   <a href="https://www.nordtheme.com/docs/ports/emacs" target="_blank">
     <img src="https://img.shields.io/github/release/nordtheme/emacs.svg?style=flat-square&label=Docs&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI%2BCiAgICA8cGF0aCBmaWxsPSIjZDhkZWU5IiBkPSJNMTMuNzQ2IDIuODEzYS42Ny42NyAwIDAgMC0uNTU5LS4xMzNMOCAzLjg0OGwtNS4xODgtMS4xOGEuNjY5LjY2OSAwIDAgMC0uNTcuMTMzLjY3Ny42NzcgMCAwIDAtLjI0Mi41MzF2OC4xMzNjLS4wMDguMzIuMjEuNTk4LjUyLjY2OGw1LjMzMiAxLjE5OWguMjk2bDUuMzMyLTEuMmEuNjY4LjY2OCAwIDAgMCAuNTItLjY2N1YzLjMzMmEuNjU5LjY1OSAwIDAgMC0uMjU0LS41MnpNMy4zMzIgNC4xNjhsNCAuODk4djYuNzY2bC00LS44OTh6bTkuMzM2IDYuNzY2bC00IC44OThWNS4wNjZsNC0uODk4em0wIDAiLz4KPC9zdmc%2BCg%3D%3D"/>
   </a>
-  <a href="https://github.com/nordtheme/emacs/blob/develop/changelog.md" target="_blank">
+  <a href="https://github.com/nordtheme/emacs/blob/master/changelog.md" target="_blank">
     <img src="https://img.shields.io/github/release/nordtheme/emacs.svg?style=flat-square&label=Changelog&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/>
   </a>
 </p>
@@ -156,7 +156,7 @@ The guide also includes information about [minimal, complete, and verifiable exa
 </p>
 
 <p align="center">
-  <a href="https://github.com/nordtheme/emacs/blob/develop/license" target="_blank">
+  <a href="https://github.com/nordtheme/emacs/blob/master/license" target="_blank">
     <img src="https://img.shields.io/static/v1.svg?style=flat-square&label=License&message=MIT&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/>
   </a>
   <a href="https://www.svengreb.de">
