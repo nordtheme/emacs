@@ -4,7 +4,7 @@
 
 ;; Title: Nord Theme
 ;; Project: nord-emacs
-;; Version: 0.5.0
+;; Version: 0.6.0
 ;; URL: https://github.com/nordtheme/emacs
 ;; Author: Sven Greb <development@svengreb.de>
 ;; Package-Requires: ((emacs "24"))

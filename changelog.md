@@ -18,6 +18,51 @@
 
 <!--lint disable no-duplicate-headings-->
 
+# 0.6.0
+
+![Release Date: 2025-03-12](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2025-03-12&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.6.0&colorA=4c566a&colorB=88c0d0)](https://github.com/orgs/nordtheme/projects/1/views/10) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.6.0&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/emacs/milestone/8?closed=1)
+
+## Feature
+
+- **Support for _ivy-posframe_** — #90 (⊶ e43946b4) by [@ReilySiegel][gh-user-reilysiegel]
+  ↠ Added support for the [_ivy-posframe_][tumashu/ivy-posframe] of the [ivy][melpa-ivy] package.
+  By default, the inherited _posframe_ theme has the same background color as buffers, which was hard to distinguish where the _posframe_ ends and the buffer begins. The background for now uses `nord1` instead.
+
+  <p align="center"><strong>Before</strong></p>
+  <p align="center"><img src="https://user-images.githubusercontent.com/7836623/84815574-8296a780-b013-11ea-8aee-b763fe46dd0c.png" /></p>
+
+  <p align="center"><strong>After</strong></p>
+  <p align="center"><img src="https://user-images.githubusercontent.com/7836623/84815573-81fe1100-b013-11ea-8024-59c7b233dd74.png" /></p>
+
+- **Support for _perspective.el_** — #86 ⇄ #91 (⊶ 4f5b6460) by [@kaiwk][gh-user-kaiwk]
+  ↠ Added support for the [_perspective.el_][nex3/perspective-el] package.
+
+- **`nordtheme` organization migration** — #122 ⇄ #123 (⊶ 86ed451a) by [@svengreb][gh-user-svengreb]
+  ↠ As part of the [“Northern Post — The state and roadmap of Nord“][gh-discussion-183] announcement, this repository will be migrated to [the `nordtheme` GitHub organization][gh-nordtheme]. This issue is a task of nordtheme/nord#185 epic.
+
+- **Adapted remaining `arcticicestudio` "fade-out" changes** — #124 ⇄ #125 (⊶ 15dadfbe) by [@svengreb][gh-user-svengreb]
+  ↠ With [the retirement of the _Arctic Ice Studio_ personal & Nord project brand][gh-discussion-183-rebrand] various migrations to [the `svengreb` GitHub account][gh-web-241] of other projects were also completed within the last months. There are also changes in Nord projects like `nordtheme/web` that other projects depended on and have been adapted as well.
+  Therefore all Nord projects must adapt these changes which includes…
+
+  - [the migration and repository name change of `arcticicestudio/nord-docs`][gh-web-241] — all references have been updated.
+  - [the migration of the `arcticicestudio/styleguide-git` repository to the `svengreb` _real-in-person_ identity][gh-styleguide-git-12] — all references and used npm packages have been updated.
+  - [the migration of the `arcticicestudio/styleguide-javascript` repository to the `svengreb` _real-in-person_ identity][gh-styleguide-javascript-88] — all references and used npm packages have been updated.
+  - [the migration of the `arcticicestudio/styleguide-markdown` repository to the `svengreb` _real-in-person_ identity][gh-styleguide-markdown-63] — all references and used npm packages have been updated.
+
+- **Migrate no longer valid style `sunken-button` to `pressed-button`** — #130 #133 ⇄ #131 (⊶ 336a76ab) by @cariandrum22 [gh-user-cariandrum22], @cybercode [gh-user-cybercode], @kresdjan [gh-user-kresdjan], and @henschkowski [gh-user-henschkowski]
+  ↠ Fixed the face for `:box` which is invalid as of Emacs version 30. The style attribute `sunken-button` for [the `:box` attribute set on a `button` or `custom-button*` is not a valid value][gnu-emacs-docs-face_attrs] anymore. It [has always been invalid due to a bug][gnu-issue-67404] in a previous version as is thrown as an error as of Emacs version 30.
+  In the context of the code, `sunken-button` itself is considered equivalent to `pressed-button`, so all places where `sunken-button` was specified has been replaced with `pressed-button`.
+
+- **GitHub Flow migration** — #134 ⇄ #135 (⊶ 9dc54cb5) by [@svengreb][gh-user-svengreb]
+  ↠ Adapted to [GitHub Flow][gh-guides-intro-flow] like documented in detail in the main task issue [svengreb/styleguide-git#9][gh-styleguide-git-9].
+  <div align="center">
+  <img src="https://user-images.githubusercontent.com/7836623/78555431-4e318e80-780d-11ea-8ff4-52f9a9a27682.png" />
+  </div>
+
+- **From `master` to `main`** — #136 ⇄ #137 (⊶ ed46007d) by [@svengreb][gh-user-svengreb]
+  ↠ Adapted to the [default branch renaming from `master` to `main`][gh-github-renaming] like documented in detail in the main task issue [svengreb/styleguide-git#11][gh-styleguide-git-11].
+  <div align="center"><img src="https://user-images.githubusercontent.com/7836623/113505556-d8572480-953f-11eb-8e72-2a7ba7387765.png" /></div>
+
 # 0.5.0
 
 ![Release Date: 2020-01-08](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2020-01-08&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.5.0&colorA=4c566a&colorB=88c0d0)](https://github.com/orgs/nordtheme/projects/1/views/10) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.5.0&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/emacs/milestone/7)
@@ -342,6 +387,7 @@ _2017-03-25_
 <!-- Base Links -->
 
 [gh-nord]: https://github.com/nordtheme/nord
+[melpa-ivy]: https://melpa.org/#/ivy
 [nord-docs-colors#frost]: https://www.nordtheme.com/docs/colors-and-palettes#frost
 [nord-docs-colors#snowstorm]: https://www.nordtheme.com/docs/colors-and-palettes#snow-storm
 [nord]: https://www.nordtheme.com
@@ -372,4 +418,28 @@ _2017-03-25_
 [gh-user-jdek]: https://github.com/jdek
 [gh-user-rien333]: https://github.com/rien333
 [gh-user-visigoth]: https://github.com/visigoth
-[melpa-ivy]: https://melpa.org/#/ivy
+
+<!--v 0.6.0 -->
+
+[gh-discussion-183-rebrand]: https://github.com/orgs/nordtheme/discussions/183#retire-arctic-ice-studio-as-nord-brand
+[gh-discussion-183]: https://github.com/orgs/nordtheme/discussions/183
+[gh-github-renaming]: https://github.com/github/renaming
+[gh-guides-intro-flow]: https://guides.github.com/introduction/flow
+[gh-nordtheme]: https://github.com/nordtheme
+[gh-styleguide-git-11]: https://github.com/svengreb/styleguide-git/issues/11
+[gh-styleguide-git-12]: https://github.com/svengreb/styleguide-git/issues/12
+[gh-styleguide-git-9]: https://github.com/svengreb/styleguide-git/issues/9
+[gh-styleguide-javascript-88]: https://github.com/svengreb/styleguide-javascript/issues/88
+[gh-styleguide-markdown-63]: https://github.com/svengreb/styleguide-markdown/issues/63
+[gh-user-cariandrum22]: https://github.com/cariandrum22
+[gh-user-cybercode]: https://github.com/cybercode
+[gh-user-henschkowski]: https://github.com/henschkowski
+[gh-user-kaiwk]: https://github.com/kaiwk
+[gh-user-kresdjan]: https://github.com/kresdjan
+[gh-user-reilysiegel]: https://github.com/ReilySiegel
+[gh-user-svengreb]: https://github.com/svengreb
+[gh-web-241]: https://github.com/nordtheme/web/issues/241
+[gnu-emacs-docs-face_attrs]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Face-Attributes.html
+[gnu-issue-67404]: https://debbugs.gnu.org/cgi/bugreport.cgi?bug=67404
+[nex3/perspective-el]: https://github.com/nex3/perspective-el
+[tumashu/ivy-posframe]: https://github.com/tumashu/ivy-posframe
