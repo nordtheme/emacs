@@ -710,7 +710,18 @@
     `(ivy-remote ((,class (:foreground ,nord14))))
 
     ;; > perspective
-    `(persp-selected-face ((,class (:foreground ,nord8 :weight bold))))))
+    `(persp-selected-face ((,class (:foreground ,nord8 :weight bold))))
+
+    ;; > vterm
+    `(vterm-color-default ((,class (:foreground ,nord4 :background ,nord0))))
+    `(vterm-color-black ((,class (:foreground ,nord1 :background ,nord3))))
+    `(vterm-color-red ((,class (:foreground ,nord11 :background ,nord11))))
+    `(vterm-color-green ((,class (:foreground ,nord14 :background ,nord14))))
+    `(vterm-color-yellow ((,class (:foreground ,nord13 :background ,nord13))))
+    `(vterm-color-blue ((,class (:foreground ,nord9 :background ,nord9))))
+    `(vterm-color-magenta ((,class (:foreground ,nord15 :background ,nord15))))
+    `(vterm-color-cyan ((,class (:foreground ,nord8 :background ,nord7))))
+    `(vterm-color-white ((,class (:foreground ,nord5 :background ,nord6))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
