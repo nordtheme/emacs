@@ -190,6 +190,16 @@
     `(diff-refine-removed ((,class (:foreground ,nord11))))
     `(diff-removed ((,class (:foreground ,nord11))))
 
+    ;; > diff
+    `(ediff-even-diff-A ((,class (:background ,nord1))))
+    `(ediff-even-diff-Ancestor ((,class (:background ,nord1))))
+    `(ediff-even-diff-B ((,class (:background ,nord1))))
+    `(ediff-even-diff-C ((,class (:background ,nord1))))
+    `(ediff-odd-diff-A ((,class (:background ,nord2))))
+    `(ediff-odd-diff-Ancestor ((,class (:background ,nord2))))
+    `(ediff-odd-diff-B ((,class (:background ,nord2))))
+    `(ediff-odd-diff-C ((,class (:background ,nord2))))
+
     ;; +--- UI ---+
     `(border ((,class (:foreground ,nord4))))
     `(buffer-menu-buffer ((,class (:foreground ,nord4 :weight bold))))
