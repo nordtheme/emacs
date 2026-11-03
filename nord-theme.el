@@ -1,4 +1,4 @@
-;;; nord-theme.el --- An arctic, north-bluish clean and elegant theme
+;;; nord-theme.el --- An arctic, north-bluish clean and elegant theme -*- lexical-binding: t -*-
 
 ;; Copyright (c) 2016-present Sven Greb <development@svengreb.de> (https://www.svengreb.de)
 
